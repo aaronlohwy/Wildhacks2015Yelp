@@ -86,7 +86,7 @@ app.post('/testpage', function(appreq, appres) {
 
 });
 
-var axes=function(businesses){
+/*var axes=function(businesses){
 	var xaxis=[];
 	var yaxis=[];
 
@@ -189,4 +189,4 @@ var plotting = function (businesses) {
 		});
 
 chart.render();
-};
+};*/

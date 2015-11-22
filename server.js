@@ -104,9 +104,9 @@ var plotting = function (businesses) {
 		for(var i =0;i<businesses.length; i++){
 
 			var current = businesses[i];
-			var cx=current.review_count;
-			var cy=current.rating;
-			var cname=current.name;
+			var cx = current[2];
+			var cy = current[1];
+			var cname = current[0];
 
 			myDataPoints.push({x:cx, y:cy,name:cname});
 

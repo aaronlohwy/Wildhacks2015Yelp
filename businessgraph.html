@@ -7,27 +7,26 @@ window.onload = function () {
 
     var restName = "RestaurantNameGoesHere";
     chart.options.title = { text: 'Reviews for ' + restName };
-    chart.options.axisX = { title: 'Useful'};
-    chart.options.axisY = { title: 'Funny'};
+    chart.options.axisX = { title: 'Stars'};
+    chart.options.axisY = { title: 'Ratings'};
     chart.options.legend = { text: 'Bubble size is coolness of review'};
 
     var series1 = { //dataSeries - first quarter
-        type: "bubble",
-      toolTipContent: "<span style='\"'color: {color};'\"'><strong>{name}</strong></span><br/><strong>Useful</strong> {x}<br/> <strong>Funny</strong> {y}<br/> <strong>Cool</strong> {z}",
+        type: "scatter",
+              toolTipContent: "<span style='\"'color: {color};'\"'><strong>{name}</strong></span><br/><strong>Useful</strong> {x}<br/> <strong>Funny</strong> {y}<br/> <strong>Cool</strong> {z}",
     };
 
   
   chart.options.data = [];
     chart.options.data.push(series1);
 
-	var useful = [3,4,2,3,4];
-	var funny = [2,4,3,3,2];
-	var cool = [4,3,2,3,3];
+	var stars = [3,4,2,3,4];
+	var ratings = [2,4,3,3,2];
 	var names = ['tim','jon','will','kevin','jai'];
 
 	var tmparray = [];
-	for (var i=0; i < useful.length; i++) {
-		tmparray.push({ x: useful[i], y: funny[i], z: cool[i], name: names[i]});
+	for (var i=0; i < stars.length; i++) {
+		tmparray.push({ x: stars[i], y: ratings[i], name: names[i]});
 	}
 	series1.dataPoints = tmparray;
 

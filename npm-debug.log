@@ -1,0 +1,1427 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install', 'express' ]
+2 info using npm@3.4.1
+3 info using node@v0.10.25
+4 verbose node symlink /usr/bin/node
+5 silly loadCurrentTree Starting
+6 silly install loadCurrentTree
+7 silly install readLocalPackageData
+8 silly fetchPackageMetaData express@~4.0.0
+9 silly fetchNamedPackageData express
+10 silly mapToRegistry name express
+11 silly mapToRegistry using default registry
+12 silly mapToRegistry registry https://registry.npmjs.org/
+13 silly mapToRegistry uri https://registry.npmjs.org/express
+14 verbose request uri https://registry.npmjs.org/express
+15 verbose request no auth needed
+16 info attempt registry request try #1 at 19:11:00
+17 verbose request id 67ab83d194165e1d
+18 verbose etag "4UTFHOB8K5VT00DX2H79LOK9W"
+19 http request GET https://registry.npmjs.org/express
+20 http 304 https://registry.npmjs.org/express
+21 verbose headers { date: 'Sun, 22 Nov 2015 01:11:00 GMT',
+21 verbose headers   via: '1.1 varnish',
+21 verbose headers   'cache-control': 'max-age=60',
+21 verbose headers   etag: '"4UTFHOB8K5VT00DX2H79LOK9W"',
+21 verbose headers   age: '29',
+21 verbose headers   connection: 'keep-alive',
+21 verbose headers   'x-served-by': 'cache-dfw1825-DFW',
+21 verbose headers   'x-cache': 'HIT',
+21 verbose headers   'x-cache-hits': '1',
+21 verbose headers   'x-timer': 'S1448154660.432710,VS0,VE1',
+21 verbose headers   vary: 'Accept' }
+22 silly get cb [ 304,
+22 silly get   { date: 'Sun, 22 Nov 2015 01:11:00 GMT',
+22 silly get     via: '1.1 varnish',
+22 silly get     'cache-control': 'max-age=60',
+22 silly get     etag: '"4UTFHOB8K5VT00DX2H79LOK9W"',
+22 silly get     age: '29',
+22 silly get     connection: 'keep-alive',
+22 silly get     'x-served-by': 'cache-dfw1825-DFW',
+22 silly get     'x-cache': 'HIT',
+22 silly get     'x-cache-hits': '1',
+22 silly get     'x-timer': 'S1448154660.432710,VS0,VE1',
+22 silly get     vary: 'Accept' } ]
+23 verbose etag https://registry.npmjs.org/express from cache
+24 verbose get saving express to /home/kjin/.npm/registry.npmjs.org/express/.cache.json
+25 silly install normalizeTree
+26 silly loadCurrentTree Finishing
+27 silly loadIdealTree Starting
+28 silly install loadIdealTree
+29 silly cloneCurrentTree Starting
+30 silly install cloneCurrentTreeToIdealTree
+31 silly cloneCurrentTree Finishing
+32 silly loadShrinkwrap Starting
+33 silly install loadShrinkwrap
+34 silly loadShrinkwrap Finishing
+35 silly loadAllDepsIntoIdealTree Starting
+36 silly install loadAllDepsIntoIdealTree
+37 silly resolveWithNewModule express@4.0.0 checking installable status
+38 silly cache add args [ 'express@~4.0.0', null ]
+39 verbose cache add spec express@~4.0.0
+40 silly cache add parsed spec { raw: 'express@~4.0.0',
+40 silly cache add   scope: null,
+40 silly cache add   name: 'express',
+40 silly cache add   rawSpec: '~4.0.0',
+40 silly cache add   spec: '>=4.0.0 <4.1.0',
+40 silly cache add   type: 'range' }
+41 silly addNamed express@>=4.0.0 <4.1.0
+42 verbose addNamed ">=4.0.0 <4.1.0" is a valid semver range for express
+43 silly addNameRange { name: 'express', range: '>=4.0.0 <4.1.0', hasData: false }
+44 silly mapToRegistry name express
+45 silly mapToRegistry using default registry
+46 silly mapToRegistry registry https://registry.npmjs.org/
+47 silly mapToRegistry uri https://registry.npmjs.org/express
+48 verbose addNameRange registry:https://registry.npmjs.org/express not in flight; fetching
+49 verbose get https://registry.npmjs.org/express not expired, no request
+50 silly addNameRange number 2 { name: 'express', range: '>=4.0.0 <4.1.0', hasData: true }
+51 silly addNameRange versions [ 'express',
+51 silly addNameRange   [ '0.14.0',
+51 silly addNameRange     '0.14.1',
+51 silly addNameRange     '1.0.0',
+51 silly addNameRange     '1.0.1',
+51 silly addNameRange     '1.0.2',
+51 silly addNameRange     '1.0.3',
+51 silly addNameRange     '1.0.4',
+51 silly addNameRange     '1.0.5',
+51 silly addNameRange     '1.0.6',
+51 silly addNameRange     '1.0.7',
+51 silly addNameRange     '1.0.8',
+51 silly addNameRange     '2.0.0',
+51 silly addNameRange     '2.1.0',
+51 silly addNameRange     '2.1.1',
+51 silly addNameRange     '2.2.0',
+51 silly addNameRange     '2.2.1',
+51 silly addNameRange     '2.2.2',
+51 silly addNameRange     '2.3.0',
+51 silly addNameRange     '2.3.1',
+51 silly addNameRange     '2.3.2',
+51 silly addNameRange     '2.3.3',
+51 silly addNameRange     '2.3.4',
+51 silly addNameRange     '2.3.5',
+51 silly addNameRange     '2.3.6',
+51 silly addNameRange     '2.3.7',
+51 silly addNameRange     '2.3.8',
+51 silly addNameRange     '2.3.9',
+51 silly addNameRange     '2.3.10',
+51 silly addNameRange     '2.3.11',
+51 silly addNameRange     '2.3.12',
+51 silly addNameRange     '2.4.0',
+51 silly addNameRange     '2.4.1',
+51 silly addNameRange     '2.4.2',
+51 silly addNameRange     '2.4.3',
+51 silly addNameRange     '2.4.4',
+51 silly addNameRange     '2.4.5',
+51 silly addNameRange     '2.4.6',
+51 silly addNameRange     '2.4.7',
+51 silly addNameRange     '2.5.0',
+51 silly addNameRange     '2.5.1',
+51 silly addNameRange     '2.5.2',
+51 silly addNameRange     '2.5.3',
+51 silly addNameRange     '2.5.4',
+51 silly addNameRange     '2.5.5',
+51 silly addNameRange     '2.5.6',
+51 silly addNameRange     '2.5.7',
+51 silly addNameRange     '2.5.8',
+51 silly addNameRange     '2.5.9',
+51 silly addNameRange     '2.5.10',
+51 silly addNameRange     '2.5.11',
+51 silly addNameRange     '3.0.0',
+51 silly addNameRange     '3.0.1',
+51 silly addNameRange     '3.0.2',
+51 silly addNameRange     '3.0.3',
+51 silly addNameRange     '3.0.4',
+51 silly addNameRange     '3.0.5',
+51 silly addNameRange     '3.0.6',
+51 silly addNameRange     '3.1.0',
+51 silly addNameRange     '3.1.1',
+51 silly addNameRange     '3.1.2',
+51 silly addNameRange     '3.2.0',
+51 silly addNameRange     '3.2.1',
+51 silly addNameRange     '3.2.2',
+51 silly addNameRange     '3.2.3',
+51 silly addNameRange     '3.2.4',
+51 silly addNameRange     '3.2.5',
+51 silly addNameRange     '3.2.6',
+51 silly addNameRange     '3.3.0',
+51 silly addNameRange     '3.3.1',
+51 silly addNameRange     '3.3.2',
+51 silly addNameRange     '3.3.3',
+51 silly addNameRange     '3.3.4',
+51 silly addNameRange     '3.3.5',
+51 silly addNameRange     '3.3.6',
+51 silly addNameRange     '1.0.0-beta',
+51 silly addNameRange     '1.0.0-beta2',
+51 silly addNameRange     '1.0.0-rc',
+51 silly addNameRange     '1.0.0-rc2',
+51 silly addNameRange     '1.0.0-rc3',
+51 silly addNameRange     '1.0.0-rc4',
+51 silly addNameRange     '2.0.0-beta',
+51 silly addNameRange     '2.0.0-beta2',
+51 silly addNameRange     '2.0.0-beta3',
+51 silly addNameRange     '2.0.0-rc',
+51 silly addNameRange     '2.0.0-rc2',
+51 silly addNameRange     '2.0.0-rc3',
+51 silly addNameRange     '3.0.0-alpha1',
+51 silly addNameRange     '3.0.0-alpha2',
+51 silly addNameRange     '3.0.0-alpha3',
+51 silly addNameRange     '3.0.0-alpha4',
+51 silly addNameRange     '3.0.0-alpha5',
+51 silly addNameRange     '3.0.0-beta1',
+51 silly addNameRange     '3.0.0-beta2',
+51 silly addNameRange     '3.0.0-beta3',
+51 silly addNameRange     '3.0.0-beta4',
+51 silly addNameRange     '3.0.0-beta6',
+51 silly addNameRange     '3.0.0-beta7',
+51 silly addNameRange     '3.0.0-rc1',
+51 silly addNameRange     '3.0.0-rc2',
+51 silly addNameRange     '3.0.0-rc3',
+51 silly addNameRange     '3.0.0-rc4',
+51 silly addNameRange     '3.0.0-rc5',
+51 silly addNameRange     '3.3.7',
+51 silly addNameRange     '3.3.8',
+51 silly addNameRange     '3.4.0',
+51 silly addNameRange     '3.4.1',
+51 silly addNameRange     '3.4.2',
+51 silly addNameRange     '3.4.3',
+51 silly addNameRange     '3.4.4',
+51 silly addNameRange     '3.4.5',
+51 silly addNameRange     '3.4.6',
+51 silly addNameRange     '3.4.7',
+51 silly addNameRange     '3.4.8',
+51 silly addNameRange     '4.0.0-rc1',
+51 silly addNameRange     '4.0.0-rc2',
+51 silly addNameRange     '3.5.0',
+51 silly addNameRange     '4.0.0-rc3',
+51 silly addNameRange     '4.0.0-rc4',
+51 silly addNameRange     '3.5.1',
+51 silly addNameRange     '4.0.0',
+51 silly addNameRange     '3.5.2',
+51 silly addNameRange     '4.1.0',
+51 silly addNameRange     '4.1.1',
+51 silly addNameRange     '3.5.3',
+51 silly addNameRange     '4.1.2',
+51 silly addNameRange     '3.6.0',
+51 silly addNameRange     '4.2.0',
+51 silly addNameRange     '3.7.0',
+51 silly addNameRange     '3.8.0',
+51 silly addNameRange     '4.3.0',
+51 silly addNameRange     '4.3.1',
+51 silly addNameRange     '3.8.1',
+51 silly addNameRange     '4.3.2',
+51 silly addNameRange     '3.9.0',
+51 silly addNameRange     '4.4.0',
+51 silly addNameRange     '4.4.1',
+51 silly addNameRange     '3.10.0',
+51 silly addNameRange     '3.10.1',
+51 silly addNameRange     '3.10.2',
+51 silly addNameRange     '3.10.3',
+51 silly addNameRange     '3.10.4',
+51 silly addNameRange     '4.4.2',
+51 silly addNameRange     '3.10.5',
+51 silly addNameRange     '4.4.3',
+51 silly addNameRange     '3.11.0',
+51 silly addNameRange     '4.4.4',
+51 silly addNameRange     '3.12.0',
+51 silly addNameRange     '3.12.1',
+51 silly addNameRange     '4.4.5',
+51 silly addNameRange     '3.13.0',
+51 silly addNameRange     '4.5.0',
+51 silly addNameRange     '4.5.1',
+51 silly addNameRange     '3.14.0',
+51 silly addNameRange     '4.6.0',
+51 silly addNameRange     '4.6.1',
+51 silly addNameRange     '3.15.0',
+51 silly addNameRange     '4.7.0',
+51 silly addNameRange     '3.15.1',
+51 silly addNameRange     '4.7.1',
+51 silly addNameRange     '3.15.2',
+51 silly addNameRange     '4.7.2',
+51 silly addNameRange     '4.7.3',
+51 silly addNameRange     '3.15.3',
+51 silly addNameRange     '4.7.4',
+51 silly addNameRange     '3.16.0',
+51 silly addNameRange     '4.8.0',
+51 silly addNameRange     '3.16.1',
+51 silly addNameRange     '4.8.1',
+51 silly addNameRange     '3.16.2',
+51 silly addNameRange     '4.8.2',
+51 silly addNameRange     '3.16.3',
+51 silly addNameRange     '3.16.4',
+51 silly addNameRange     '4.8.3',
+51 silly addNameRange     '3.16.5',
+51 silly addNameRange     '3.16.6',
+51 silly addNameRange     '4.8.4',
+51 silly addNameRange     '3.16.7',
+51 silly addNameRange     '4.8.5',
+51 silly addNameRange     '3.16.8',
+51 silly addNameRange     '4.8.6',
+51 silly addNameRange     '3.16.9',
+51 silly addNameRange     '4.8.7',
+51 silly addNameRange     '3.16.10',
+51 silly addNameRange     '4.8.8',
+51 silly addNameRange     '3.17.0',
+51 silly addNameRange     '3.17.1',
+51 silly addNameRange     '4.9.0',
+51 silly addNameRange     '3.17.2',
+51 silly addNameRange     '4.9.1',
+51 silly addNameRange     '4.9.2',
+51 silly addNameRange     '3.17.3',
+51 silly addNameRange     '4.9.3',
+51 silly addNameRange     '3.17.4',
+51 silly addNameRange     '4.9.4',
+51 silly addNameRange     '3.17.5',
+51 silly addNameRange     '4.9.5',
+51 silly addNameRange     '3.17.6',
+51 silly addNameRange     '3.17.7',
+51 silly addNameRange     '4.9.6',
+51 silly addNameRange     '4.9.7',
+51 silly addNameRange     '3.17.8',
+51 silly addNameRange     '4.9.8',
+51 silly addNameRange     '3.18.0',
+51 silly addNameRange     '3.18.1',
+51 silly addNameRange     '4.10.0',
+51 silly addNameRange     '3.18.2',
+51 silly addNameRange     '4.10.1',
+51 silly addNameRange     '5.0.0-alpha.1',
+51 silly addNameRange     '3.18.3',
+51 silly addNameRange     '4.10.2',
+51 silly addNameRange     '3.18.4',
+51 silly addNameRange     '4.10.3',
+51 silly addNameRange     '4.10.4',
+51 silly addNameRange     '4.10.5',
+51 silly addNameRange     '3.18.5',
+51 silly addNameRange     '3.18.6',
+51 silly addNameRange     '4.10.6',
+51 silly addNameRange     '4.10.7',
+51 silly addNameRange     '3.19.0',
+51 silly addNameRange     '4.10.8',
+51 silly addNameRange     '4.11.0',
+51 silly addNameRange     '3.19.1',
+51 silly addNameRange     '4.11.1',
+51 silly addNameRange     '3.19.2',
+51 silly addNameRange     '4.11.2',
+51 silly addNameRange     '3.20.0',
+51 silly addNameRange     '4.12.0',
+51 silly addNameRange     '3.20.1',
+51 silly addNameRange     '4.12.1',
+51 silly addNameRange     '4.12.2',
+51 silly addNameRange     '3.20.2',
+51 silly addNameRange     '4.12.3',
+51 silly addNameRange     '3.20.3',
+51 silly addNameRange     '4.12.4',
+51 silly addNameRange     '3.21.0',
+51 silly addNameRange     '4.13.0',
+51 silly addNameRange     '3.21.1',
+51 silly addNameRange     '4.13.1',
+51 silly addNameRange     '5.0.0-alpha.2',
+51 silly addNameRange     '3.21.2',
+51 silly addNameRange     '4.13.2',
+51 silly addNameRange     '4.13.3' ] ]
+52 silly addNamed express@4.0.0
+53 verbose addNamed "4.0.0" is a plain semver version for express
+54 silly cache afterAdd express@4.0.0
+55 verbose afterAdd /home/kjin/.npm/express/4.0.0/package/package.json not in flight; writing
+56 verbose afterAdd /home/kjin/.npm/express/4.0.0/package/package.json written
+57 silly fetchNamedPackageData send
+58 silly mapToRegistry name send
+59 silly mapToRegistry using default registry
+60 silly mapToRegistry registry https://registry.npmjs.org/
+61 silly mapToRegistry uri https://registry.npmjs.org/send
+62 verbose request uri https://registry.npmjs.org/send
+63 verbose request no auth needed
+64 info attempt registry request try #1 at 19:11:00
+65 verbose etag "APVO6G21BQNLG10Z1NYC3J8EZ"
+66 http request GET https://registry.npmjs.org/send
+67 http 304 https://registry.npmjs.org/send
+68 verbose headers { date: 'Sun, 22 Nov 2015 01:11:00 GMT',
+68 verbose headers   via: '1.1 varnish',
+68 verbose headers   'cache-control': 'max-age=60',
+68 verbose headers   etag: '"APVO6G21BQNLG10Z1NYC3J8EZ"',
+68 verbose headers   age: '47',
+68 verbose headers   connection: 'keep-alive',
+68 verbose headers   'x-served-by': 'cache-dfw1834-DFW',
+68 verbose headers   'x-cache': 'HIT',
+68 verbose headers   'x-cache-hits': '1',
+68 verbose headers   'x-timer': 'S1448154660.876511,VS0,VE0',
+68 verbose headers   vary: 'Accept' }
+69 silly get cb [ 304,
+69 silly get   { date: 'Sun, 22 Nov 2015 01:11:00 GMT',
+69 silly get     via: '1.1 varnish',
+69 silly get     'cache-control': 'max-age=60',
+69 silly get     etag: '"APVO6G21BQNLG10Z1NYC3J8EZ"',
+69 silly get     age: '47',
+69 silly get     connection: 'keep-alive',
+69 silly get     'x-served-by': 'cache-dfw1834-DFW',
+69 silly get     'x-cache': 'HIT',
+69 silly get     'x-cache-hits': '1',
+69 silly get     'x-timer': 'S1448154660.876511,VS0,VE0',
+69 silly get     vary: 'Accept' } ]
+70 verbose etag https://registry.npmjs.org/send from cache
+71 verbose get saving send to /home/kjin/.npm/registry.npmjs.org/send/.cache.json
+72 silly resolveWithNewModule send@0.1.4 checking installable status
+73 silly cache add args [ 'send@0.1.4', null ]
+74 verbose cache add spec send@0.1.4
+75 silly cache add parsed spec { raw: 'send@0.1.4',
+75 silly cache add   scope: null,
+75 silly cache add   name: 'send',
+75 silly cache add   rawSpec: '0.1.4',
+75 silly cache add   spec: '0.1.4',
+75 silly cache add   type: 'version' }
+76 silly addNamed send@0.1.4
+77 verbose addNamed "0.1.4" is a plain semver version for send
+78 silly mapToRegistry name send
+79 silly mapToRegistry using default registry
+80 silly mapToRegistry registry https://registry.npmjs.org/
+81 silly mapToRegistry uri https://registry.npmjs.org/send
+82 verbose addNameVersion registry:https://registry.npmjs.org/send not in flight; fetching
+83 verbose get https://registry.npmjs.org/send not expired, no request
+84 silly cache afterAdd send@0.1.4
+85 verbose afterAdd /home/kjin/.npm/send/0.1.4/package/package.json not in flight; writing
+86 verbose afterAdd /home/kjin/.npm/send/0.1.4/package/package.json written
+87 silly fetchNamedPackageData fresh
+88 silly mapToRegistry name fresh
+89 silly mapToRegistry using default registry
+90 silly mapToRegistry registry https://registry.npmjs.org/
+91 silly mapToRegistry uri https://registry.npmjs.org/fresh
+92 silly fetchNamedPackageData range-parser
+93 silly mapToRegistry name range-parser
+94 silly mapToRegistry using default registry
+95 silly mapToRegistry registry https://registry.npmjs.org/
+96 silly mapToRegistry uri https://registry.npmjs.org/range-parser
+97 verbose request uri https://registry.npmjs.org/fresh
+98 verbose request no auth needed
+99 info attempt registry request try #1 at 19:11:00
+100 verbose etag "DR9HGFXEBWC264VBDEVYYL9DO"
+101 http request GET https://registry.npmjs.org/fresh
+102 verbose request uri https://registry.npmjs.org/range-parser
+103 verbose request no auth needed
+104 info attempt registry request try #1 at 19:11:00
+105 verbose etag "WUN9A797QWJ2XJXZWC3LSZ0X"
+106 http request GET https://registry.npmjs.org/range-parser
+107 http 304 https://registry.npmjs.org/fresh
+108 verbose headers { date: 'Sun, 22 Nov 2015 01:11:01 GMT',
+108 verbose headers   via: '1.1 varnish',
+108 verbose headers   'cache-control': 'max-age=60',
+108 verbose headers   etag: '"DR9HGFXEBWC264VBDEVYYL9DO"',
+108 verbose headers   age: '29',
+108 verbose headers   connection: 'keep-alive',
+108 verbose headers   'x-served-by': 'cache-dfw1835-DFW',
+108 verbose headers   'x-cache': 'HIT',
+108 verbose headers   'x-cache-hits': '1',
+108 verbose headers   'x-timer': 'S1448154661.078634,VS0,VE0',
+108 verbose headers   vary: 'Accept' }
+109 silly get cb [ 304,
+109 silly get   { date: 'Sun, 22 Nov 2015 01:11:01 GMT',
+109 silly get     via: '1.1 varnish',
+109 silly get     'cache-control': 'max-age=60',
+109 silly get     etag: '"DR9HGFXEBWC264VBDEVYYL9DO"',
+109 silly get     age: '29',
+109 silly get     connection: 'keep-alive',
+109 silly get     'x-served-by': 'cache-dfw1835-DFW',
+109 silly get     'x-cache': 'HIT',
+109 silly get     'x-cache-hits': '1',
+109 silly get     'x-timer': 'S1448154661.078634,VS0,VE0',
+109 silly get     vary: 'Accept' } ]
+110 verbose etag https://registry.npmjs.org/fresh from cache
+111 verbose get saving fresh to /home/kjin/.npm/registry.npmjs.org/fresh/.cache.json
+112 http 304 https://registry.npmjs.org/range-parser
+113 verbose headers { date: 'Sun, 22 Nov 2015 01:11:01 GMT',
+113 verbose headers   via: '1.1 varnish',
+113 verbose headers   'cache-control': 'max-age=60',
+113 verbose headers   etag: '"WUN9A797QWJ2XJXZWC3LSZ0X"',
+113 verbose headers   age: '47',
+113 verbose headers   connection: 'keep-alive',
+113 verbose headers   'x-served-by': 'cache-dfw1824-DFW',
+113 verbose headers   'x-cache': 'HIT',
+113 verbose headers   'x-cache-hits': '8',
+113 verbose headers   'x-timer': 'S1448154661.081110,VS0,VE0',
+113 verbose headers   vary: 'Accept' }
+114 silly get cb [ 304,
+114 silly get   { date: 'Sun, 22 Nov 2015 01:11:01 GMT',
+114 silly get     via: '1.1 varnish',
+114 silly get     'cache-control': 'max-age=60',
+114 silly get     etag: '"WUN9A797QWJ2XJXZWC3LSZ0X"',
+114 silly get     age: '47',
+114 silly get     connection: 'keep-alive',
+114 silly get     'x-served-by': 'cache-dfw1824-DFW',
+114 silly get     'x-cache': 'HIT',
+114 silly get     'x-cache-hits': '8',
+114 silly get     'x-timer': 'S1448154661.081110,VS0,VE0',
+114 silly get     vary: 'Accept' } ]
+115 verbose etag https://registry.npmjs.org/range-parser from cache
+116 verbose get saving range-parser to /home/kjin/.npm/registry.npmjs.org/range-parser/.cache.json
+117 silly resolveWithNewModule fresh@0.2.0 checking installable status
+118 silly cache add args [ 'fresh@0.2.0', null ]
+119 verbose cache add spec fresh@0.2.0
+120 silly cache add parsed spec { raw: 'fresh@0.2.0',
+120 silly cache add   scope: null,
+120 silly cache add   name: 'fresh',
+120 silly cache add   rawSpec: '0.2.0',
+120 silly cache add   spec: '0.2.0',
+120 silly cache add   type: 'version' }
+121 silly addNamed fresh@0.2.0
+122 verbose addNamed "0.2.0" is a plain semver version for fresh
+123 silly mapToRegistry name fresh
+124 silly mapToRegistry using default registry
+125 silly mapToRegistry registry https://registry.npmjs.org/
+126 silly mapToRegistry uri https://registry.npmjs.org/fresh
+127 verbose addNameVersion registry:https://registry.npmjs.org/fresh not in flight; fetching
+128 silly resolveWithNewModule range-parser@0.0.4 checking installable status
+129 silly cache add args [ 'range-parser@0.0.4', null ]
+130 verbose cache add spec range-parser@0.0.4
+131 silly cache add parsed spec { raw: 'range-parser@0.0.4',
+131 silly cache add   scope: null,
+131 silly cache add   name: 'range-parser',
+131 silly cache add   rawSpec: '0.0.4',
+131 silly cache add   spec: '0.0.4',
+131 silly cache add   type: 'version' }
+132 silly addNamed range-parser@0.0.4
+133 verbose addNamed "0.0.4" is a plain semver version for range-parser
+134 silly mapToRegistry name range-parser
+135 silly mapToRegistry using default registry
+136 silly mapToRegistry registry https://registry.npmjs.org/
+137 silly mapToRegistry uri https://registry.npmjs.org/range-parser
+138 verbose addNameVersion registry:https://registry.npmjs.org/range-parser not in flight; fetching
+139 verbose get https://registry.npmjs.org/fresh not expired, no request
+140 verbose get https://registry.npmjs.org/range-parser not expired, no request
+141 silly cache afterAdd fresh@0.2.0
+142 verbose afterAdd /home/kjin/.npm/fresh/0.2.0/package/package.json not in flight; writing
+143 silly cache afterAdd range-parser@0.0.4
+144 verbose afterAdd /home/kjin/.npm/range-parser/0.0.4/package/package.json not in flight; writing
+145 verbose afterAdd /home/kjin/.npm/range-parser/0.0.4/package/package.json written
+146 verbose afterAdd /home/kjin/.npm/fresh/0.2.0/package/package.json written
+147 silly fetchOtherPackageData jsbn@git+https://github.com/rynomad/jsbn.git
+148 silly cache add args [ 'jsbn@git+https://github.com/rynomad/jsbn.git', null ]
+149 verbose cache add spec jsbn@git+https://github.com/rynomad/jsbn.git
+150 silly cache add parsed spec { raw: 'jsbn@git+https://github.com/rynomad/jsbn.git',
+150 silly cache add   scope: null,
+150 silly cache add   name: 'jsbn',
+150 silly cache add   rawSpec: 'git+https://github.com/rynomad/jsbn.git',
+150 silly cache add   spec: 'git+https://github.com/rynomad/jsbn.git',
+150 silly cache add   type: 'hosted',
+150 silly cache add   hosted:
+150 silly cache add    { type: 'github',
+150 silly cache add      ssh: 'git@github.com:rynomad/jsbn.git',
+150 silly cache add      sshUrl: 'git+ssh://git@github.com/rynomad/jsbn.git',
+150 silly cache add      httpsUrl: 'git+https://github.com/rynomad/jsbn.git',
+150 silly cache add      gitUrl: 'git://github.com/rynomad/jsbn.git',
+150 silly cache add      shortcut: 'github:rynomad/jsbn',
+150 silly cache add      directUrl: 'https://raw.githubusercontent.com/rynomad/jsbn/master/package.json' } }
+151 verbose addRemoteGit caching git+https://github.com/rynomad/jsbn.git
+152 verbose addRemoteGit git+https://github.com/rynomad/jsbn.git is a repository hosted by github
+153 silly tryClone cloning git+https://github.com/rynomad/jsbn.git via git+https://github.com/rynomad/jsbn.git
+154 verbose tryClone git-https-github-com-rynomad-jsbn-git-5eacfb5ecac35cf3eb2fc8aac95d0469 not in flight; caching
+155 info git [ 'config', '--get', 'remote.origin.url' ]
+156 silly validateExistingRemote git+https://github.com/rynomad/jsbn.git remote.origin.url: https://github.com/rynomad/jsbn.git
+157 verbose validateExistingRemote git+https://github.com/rynomad/jsbn.git is updating existing cached remote /home/kjin/.npm/_git-remotes/git-https-github-com-rynomad-jsbn-git-5eacfb5ecac35cf3eb2fc8aac95d0469
+158 info git [ 'fetch', '-a', 'origin' ]
+159 verbose updateRemote git fetch -a origin (https://github.com/rynomad/jsbn.git)
+160 verbose setPermissions git+https://github.com/rynomad/jsbn.git set permissions on /home/kjin/.npm/_git-remotes/git-https-github-com-rynomad-jsbn-git-5eacfb5ecac35cf3eb2fc8aac95d0469
+161 verbose resolveHead git+https://github.com/rynomad/jsbn.git original treeish: master
+162 info git [ 'rev-list', '-n1', 'master' ]
+163 silly resolveHead git+https://github.com/rynomad/jsbn.git resolved treeish: bb522b0124f75424f89d49446c40a87111942c7b
+164 verbose resolveHead git+https://github.com/rynomad/jsbn.git resolved Git URL: git+https://github.com/rynomad/jsbn.git#bb522b0124f75424f89d49446c40a87111942c7b
+165 silly resolveHead Git working directory: /tmp/npm-13950-0fa39134/git-cache-9e7de2dca280a71340a9d90272acacdf/bb522b0124f75424f89d49446c40a87111942c7b
+166 info git [ 'clone',
+166 info git   '/home/kjin/.npm/_git-remotes/git-https-github-com-rynomad-jsbn-git-5eacfb5ecac35cf3eb2fc8aac95d0469',
+166 info git   '/tmp/npm-13950-0fa39134/git-cache-9e7de2dca280a71340a9d90272acacdf/bb522b0124f75424f89d49446c40a87111942c7b' ]
+167 verbose cloneResolved git+https://github.com/rynomad/jsbn.git clone Cloning into '/tmp/npm-13950-0fa39134/git-cache-9e7de2dca280a71340a9d90272acacdf/bb522b0124f75424f89d49446c40a87111942c7b'...
+167 verbose cloneResolved done.
+168 info git [ 'checkout', 'bb522b0124f75424f89d49446c40a87111942c7b' ]
+169 verbose checkoutTreeish git+https://github.com/rynomad/jsbn.git checkout Note: checking out 'bb522b0124f75424f89d49446c40a87111942c7b'.
+169 verbose checkoutTreeish
+169 verbose checkoutTreeish You are in 'detached HEAD' state. You can look around, make experimental
+169 verbose checkoutTreeish changes and commit them, and you can discard any commits you make in this
+169 verbose checkoutTreeish state without impacting any branches by performing another checkout.
+169 verbose checkoutTreeish
+169 verbose checkoutTreeish If you want to create a new branch to retain commits you create, you may
+169 verbose checkoutTreeish do so (now or later) by using -b with the checkout command again. Example:
+169 verbose checkoutTreeish
+169 verbose checkoutTreeish   git checkout -b new_branch_name
+169 verbose checkoutTreeish
+169 verbose checkoutTreeish HEAD is now at bb522b0... Attach Barrett transform to BigInteger for use in dependant modules
+170 verbose addLocalDirectory /home/kjin/.npm/jsbn/0.0.0/package.tgz not in flight; packing
+171 verbose tar pack [ '/home/kjin/.npm/jsbn/0.0.0/package.tgz',
+171 verbose tar pack   '/tmp/npm-13950-0fa39134/git-cache-9e7de2dca280a71340a9d90272acacdf/bb522b0124f75424f89d49446c40a87111942c7b' ]
+172 verbose tarball /home/kjin/.npm/jsbn/0.0.0/package.tgz
+173 verbose folder /tmp/npm-13950-0fa39134/git-cache-9e7de2dca280a71340a9d90272acacdf/bb522b0124f75424f89d49446c40a87111942c7b
+174 verbose addLocalTarball adding from inside cache /home/kjin/.npm/jsbn/0.0.0/package.tgz
+175 verbose addRemoteGit data._from: git+https://github.com/rynomad/jsbn.git
+176 verbose addRemoteGit data._resolved: git+https://github.com/rynomad/jsbn.git#bb522b0124f75424f89d49446c40a87111942c7b
+177 silly cache afterAdd jsbn@0.0.0
+178 verbose afterAdd /home/kjin/.npm/jsbn/0.0.0/package/package.json not in flight; writing
+179 verbose afterAdd /home/kjin/.npm/jsbn/0.0.0/package/package.json written
+180 silly resolveWithNewModule jsbn@0.0.0 checking installable status
+181 silly loadAllDepsIntoIdealTree Finishing
+182 silly idealTree:prePrune Wildhacks-web-app@1.0.0
+182 silly idealTree:prePrune ├── accepts@1.0.0
+182 silly idealTree:prePrune ├─┬ body-parser@1.14.1
+182 silly idealTree:prePrune │ ├── bytes@2.1.0
+182 silly idealTree:prePrune │ ├── content-type@1.0.1
+182 silly idealTree:prePrune │ ├─┬ debug@2.2.0
+182 silly idealTree:prePrune │ │ └── ms@0.7.1
+182 silly idealTree:prePrune │ ├── depd@1.1.0
+182 silly idealTree:prePrune │ ├─┬ http-errors@1.3.1
+182 silly idealTree:prePrune │ │ ├── inherits@2.0.1
+182 silly idealTree:prePrune │ │ └── statuses@1.2.1
+182 silly idealTree:prePrune │ ├── iconv-lite@0.4.12
+182 silly idealTree:prePrune │ ├─┬ on-finished@2.3.0
+182 silly idealTree:prePrune │ │ └── ee-first@1.1.1
+182 silly idealTree:prePrune │ ├── qs@5.1.0
+182 silly idealTree:prePrune │ ├─┬ raw-body@2.1.4
+182 silly idealTree:prePrune │ │ └── unpipe@1.0.0
+182 silly idealTree:prePrune │ └─┬ type-is@1.6.9
+182 silly idealTree:prePrune │   ├── media-typer@0.3.0
+182 silly idealTree:prePrune │   └─┬ mime-types@2.1.7
+182 silly idealTree:prePrune │     └── mime-db@1.19.0
+182 silly idealTree:prePrune ├── buffer-crc32@0.2.1
+182 silly idealTree:prePrune ├── cookie-signature@1.0.3
+182 silly idealTree:prePrune ├── cookie@0.1.0
+182 silly idealTree:prePrune ├── debug@0.8.1
+182 silly idealTree:prePrune ├── ejs@1.0.0
+182 silly idealTree:prePrune ├── escape-html@1.0.1
+182 silly idealTree:prePrune ├── express@4.0.0
+182 silly idealTree:prePrune ├── fresh@0.2.2
+182 silly idealTree:prePrune ├── merge-descriptors@0.0.2
+182 silly idealTree:prePrune ├── methods@0.1.0
+182 silly idealTree:prePrune ├── mime@1.2.11
+182 silly idealTree:prePrune ├─┬ mysql@2.9.0
+182 silly idealTree:prePrune │ ├── bignumber.js@2.0.7
+182 silly idealTree:prePrune │ └─┬ readable-stream@1.1.13
+182 silly idealTree:prePrune │   ├── core-util-is@1.0.2
+182 silly idealTree:prePrune │   ├── inherits@2.0.1
+182 silly idealTree:prePrune │   ├── isarray@0.0.1
+182 silly idealTree:prePrune │   └── string_decoder@0.10.31
+182 silly idealTree:prePrune ├── negotiator@0.3.0
+182 silly idealTree:prePrune ├── parseurl@1.0.1
+182 silly idealTree:prePrune ├── path-to-regexp@0.1.2
+182 silly idealTree:prePrune ├── qs@0.6.6
+182 silly idealTree:prePrune ├── range-parser@1.0.0
+182 silly idealTree:prePrune ├─┬ request@2.67.0
+182 silly idealTree:prePrune │ ├── aws-sign2@0.6.0
+182 silly idealTree:prePrune │ ├─┬ bl@1.0.0
+182 silly idealTree:prePrune │ │ └─┬ readable-stream@2.0.4
+182 silly idealTree:prePrune │ │   ├── core-util-is@1.0.2
+182 silly idealTree:prePrune │ │   ├── inherits@2.0.1
+182 silly idealTree:prePrune │ │   ├── isarray@0.0.1
+182 silly idealTree:prePrune │ │   ├── process-nextick-args@1.0.3
+182 silly idealTree:prePrune │ │   ├── string_decoder@0.10.31
+182 silly idealTree:prePrune │ │   └── util-deprecate@1.0.2
+182 silly idealTree:prePrune │ ├── caseless@0.11.0
+182 silly idealTree:prePrune │ ├─┬ combined-stream@1.0.5
+182 silly idealTree:prePrune │ │ └── delayed-stream@1.0.0
+182 silly idealTree:prePrune │ ├── extend@3.0.0
+182 silly idealTree:prePrune │ ├── forever-agent@0.6.1
+182 silly idealTree:prePrune │ ├─┬ form-data@1.0.0-rc3
+182 silly idealTree:prePrune │ │ └── async@1.5.0
+182 silly idealTree:prePrune │ ├─┬ har-validator@2.0.2
+182 silly idealTree:prePrune │ │ ├─┬ chalk@1.1.1
+182 silly idealTree:prePrune │ │ │ ├── ansi-styles@2.1.0
+182 silly idealTree:prePrune │ │ │ ├── escape-string-regexp@1.0.3
+182 silly idealTree:prePrune │ │ │ ├─┬ has-ansi@2.0.0
+182 silly idealTree:prePrune │ │ │ │ └── ansi-regex@2.0.0
+182 silly idealTree:prePrune │ │ │ ├─┬ strip-ansi@3.0.0
+182 silly idealTree:prePrune │ │ │ │ └── ansi-regex@2.0.0
+182 silly idealTree:prePrune │ │ │ └── supports-color@2.0.0
+182 silly idealTree:prePrune │ │ ├─┬ commander@2.9.0
+182 silly idealTree:prePrune │ │ │ └── graceful-readlink@1.0.1
+182 silly idealTree:prePrune │ │ ├─┬ is-my-json-valid@2.12.3
+182 silly idealTree:prePrune │ │ │ ├── generate-function@2.0.0
+182 silly idealTree:prePrune │ │ │ ├─┬ generate-object-property@1.2.0
+182 silly idealTree:prePrune │ │ │ │ └── is-property@1.0.2
+182 silly idealTree:prePrune │ │ │ ├── jsonpointer@2.0.0
+182 silly idealTree:prePrune │ │ │ └── xtend@4.0.1
+182 silly idealTree:prePrune │ │ └─┬ pinkie-promise@1.0.0
+182 silly idealTree:prePrune │ │   └── pinkie@1.0.0
+182 silly idealTree:prePrune │ ├─┬ hawk@3.1.2
+182 silly idealTree:prePrune │ │ ├── boom@2.10.1
+182 silly idealTree:prePrune │ │ ├── cryptiles@2.0.5
+182 silly idealTree:prePrune │ │ ├── hoek@2.16.3
+182 silly idealTree:prePrune │ │ └── sntp@1.0.9
+182 silly idealTree:prePrune │ ├─┬ http-signature@1.1.0
+182 silly idealTree:prePrune │ │ ├── assert-plus@0.1.5
+182 silly idealTree:prePrune │ │ ├─┬ jsprim@1.2.2
+182 silly idealTree:prePrune │ │ │ ├── extsprintf@1.0.2
+182 silly idealTree:prePrune │ │ │ ├── json-schema@0.2.2
+182 silly idealTree:prePrune │ │ │ └── verror@1.3.6
+182 silly idealTree:prePrune │ │ └─┬ sshpk@1.7.0
+182 silly idealTree:prePrune │ │   ├── asn1@0.2.3
+182 silly idealTree:prePrune │ │   ├── assert-plus@0.2.0
+182 silly idealTree:prePrune │ │   ├─┬ dashdash@1.10.1
+182 silly idealTree:prePrune │ │   │ └── assert-plus@0.1.5
+182 silly idealTree:prePrune │ │   ├─┬ ecc-jsbn@0.0.1
+182 silly idealTree:prePrune │ │   │ └── jsbn@0.0.0
+182 silly idealTree:prePrune │ │   ├── jodid25519@1.0.2
+182 silly idealTree:prePrune │ │   ├── jsbn@0.1.0
+182 silly idealTree:prePrune │ │   └── tweetnacl@0.13.2
+182 silly idealTree:prePrune │ ├── is-typedarray@1.0.0
+182 silly idealTree:prePrune │ ├── isstream@0.1.2
+182 silly idealTree:prePrune │ ├── json-stringify-safe@5.0.1
+182 silly idealTree:prePrune │ ├─┬ mime-types@2.1.7
+182 silly idealTree:prePrune │ │ └── mime-db@1.19.0
+182 silly idealTree:prePrune │ ├── node-uuid@1.4.7
+182 silly idealTree:prePrune │ ├── oauth-sign@0.8.0
+182 silly idealTree:prePrune │ ├── qs@5.2.0
+182 silly idealTree:prePrune │ ├── stringstream@0.0.5
+182 silly idealTree:prePrune │ ├── tough-cookie@2.2.1
+182 silly idealTree:prePrune │ └── tunnel-agent@0.4.1
+182 silly idealTree:prePrune ├── send@0.2.0
+182 silly idealTree:prePrune ├─┬ serve-static@1.0.1
+182 silly idealTree:prePrune │ ├── fresh@0.2.0
+182 silly idealTree:prePrune │ ├── range-parser@0.0.4
+182 silly idealTree:prePrune │ └── send@0.1.4
+182 silly idealTree:prePrune ├── type-is@1.0.0
+182 silly idealTree:prePrune └── utils-merge@1.0.0
+183 silly loadIdealTree Finishing
+184 silly currentTree Wildhacks-web-app@1.0.0
+184 silly currentTree ├── accepts@1.0.0
+184 silly currentTree ├─┬ body-parser@1.14.1
+184 silly currentTree │ ├── bytes@2.1.0
+184 silly currentTree │ ├── content-type@1.0.1
+184 silly currentTree │ ├─┬ debug@2.2.0
+184 silly currentTree │ │ └── ms@0.7.1
+184 silly currentTree │ ├── depd@1.1.0
+184 silly currentTree │ ├─┬ http-errors@1.3.1
+184 silly currentTree │ │ ├── inherits@2.0.1
+184 silly currentTree │ │ └── statuses@1.2.1
+184 silly currentTree │ ├── iconv-lite@0.4.12
+184 silly currentTree │ ├─┬ on-finished@2.3.0
+184 silly currentTree │ │ └── ee-first@1.1.1
+184 silly currentTree │ ├── qs@5.1.0
+184 silly currentTree │ ├─┬ raw-body@2.1.4
+184 silly currentTree │ │ └── unpipe@1.0.0
+184 silly currentTree │ └─┬ type-is@1.6.9
+184 silly currentTree │   ├── media-typer@0.3.0
+184 silly currentTree │   └─┬ mime-types@2.1.7
+184 silly currentTree │     └── mime-db@1.19.0
+184 silly currentTree ├── buffer-crc32@0.2.1
+184 silly currentTree ├── cookie-signature@1.0.3
+184 silly currentTree ├── cookie@0.1.0
+184 silly currentTree ├── debug@0.8.1
+184 silly currentTree ├── ejs@1.0.0
+184 silly currentTree ├── escape-html@1.0.1
+184 silly currentTree ├─┬ express@4.0.0
+184 silly currentTree │ ├─┬ accepts@1.0.0
+184 silly currentTree │ │ ├── mime@1.2.11
+184 silly currentTree │ │ └── negotiator@0.3.0
+184 silly currentTree │ ├── buffer-crc32@0.2.1
+184 silly currentTree │ ├── cookie-signature@1.0.3
+184 silly currentTree │ ├── cookie@0.1.0
+184 silly currentTree │ ├── debug@0.8.1
+184 silly currentTree │ ├── escape-html@1.0.1
+184 silly currentTree │ ├── fresh@0.2.2
+184 silly currentTree │ ├── merge-descriptors@0.0.2
+184 silly currentTree │ ├── methods@0.1.0
+184 silly currentTree │ ├── parseurl@1.0.1
+184 silly currentTree │ ├── path-to-regexp@0.1.2
+184 silly currentTree │ ├── qs@0.6.6
+184 silly currentTree │ ├── range-parser@1.0.0
+184 silly currentTree │ ├─┬ send@0.2.0
+184 silly currentTree │ │ └── mime@1.2.11
+184 silly currentTree │ ├─┬ serve-static@1.0.1
+184 silly currentTree │ │ └─┬ send@0.1.4
+184 silly currentTree │ │   ├── fresh@0.2.0
+184 silly currentTree │ │   ├── mime@1.2.11
+184 silly currentTree │ │   └── range-parser@0.0.4
+184 silly currentTree │ ├─┬ type-is@1.0.0
+184 silly currentTree │ │ └── mime@1.2.11
+184 silly currentTree │ └── utils-merge@1.0.0
+184 silly currentTree ├── fresh@0.2.2
+184 silly currentTree ├── merge-descriptors@0.0.2
+184 silly currentTree ├── methods@0.1.0
+184 silly currentTree ├── mime@1.2.11
+184 silly currentTree ├─┬ mysql@2.9.0
+184 silly currentTree │ ├── bignumber.js@2.0.7
+184 silly currentTree │ └─┬ readable-stream@1.1.13
+184 silly currentTree │   ├── core-util-is@1.0.2
+184 silly currentTree │   ├── inherits@2.0.1
+184 silly currentTree │   ├── isarray@0.0.1
+184 silly currentTree │   └── string_decoder@0.10.31
+184 silly currentTree ├── negotiator@0.3.0
+184 silly currentTree ├── parseurl@1.0.1
+184 silly currentTree ├── path-to-regexp@0.1.2
+184 silly currentTree ├── qs@0.6.6
+184 silly currentTree ├── range-parser@1.0.0
+184 silly currentTree ├─┬ request@2.67.0
+184 silly currentTree │ ├── aws-sign2@0.6.0
+184 silly currentTree │ ├─┬ bl@1.0.0
+184 silly currentTree │ │ └─┬ readable-stream@2.0.4
+184 silly currentTree │ │   ├── core-util-is@1.0.2
+184 silly currentTree │ │   ├── inherits@2.0.1
+184 silly currentTree │ │   ├── isarray@0.0.1
+184 silly currentTree │ │   ├── process-nextick-args@1.0.3
+184 silly currentTree │ │   ├── string_decoder@0.10.31
+184 silly currentTree │ │   └── util-deprecate@1.0.2
+184 silly currentTree │ ├── caseless@0.11.0
+184 silly currentTree │ ├─┬ combined-stream@1.0.5
+184 silly currentTree │ │ └── delayed-stream@1.0.0
+184 silly currentTree │ ├── extend@3.0.0
+184 silly currentTree │ ├── forever-agent@0.6.1
+184 silly currentTree │ ├─┬ form-data@1.0.0-rc3
+184 silly currentTree │ │ └── async@1.5.0
+184 silly currentTree │ ├─┬ har-validator@2.0.2
+184 silly currentTree │ │ ├─┬ chalk@1.1.1
+184 silly currentTree │ │ │ ├── ansi-styles@2.1.0
+184 silly currentTree │ │ │ ├── escape-string-regexp@1.0.3
+184 silly currentTree │ │ │ ├─┬ has-ansi@2.0.0
+184 silly currentTree │ │ │ │ └── ansi-regex@2.0.0
+184 silly currentTree │ │ │ ├─┬ strip-ansi@3.0.0
+184 silly currentTree │ │ │ │ └── ansi-regex@2.0.0
+184 silly currentTree │ │ │ └── supports-color@2.0.0
+184 silly currentTree │ │ ├─┬ commander@2.9.0
+184 silly currentTree │ │ │ └── graceful-readlink@1.0.1
+184 silly currentTree │ │ ├─┬ is-my-json-valid@2.12.3
+184 silly currentTree │ │ │ ├── generate-function@2.0.0
+184 silly currentTree │ │ │ ├─┬ generate-object-property@1.2.0
+184 silly currentTree │ │ │ │ └── is-property@1.0.2
+184 silly currentTree │ │ │ ├── jsonpointer@2.0.0
+184 silly currentTree │ │ │ └── xtend@4.0.1
+184 silly currentTree │ │ └─┬ pinkie-promise@1.0.0
+184 silly currentTree │ │   └── pinkie@1.0.0
+184 silly currentTree │ ├─┬ hawk@3.1.2
+184 silly currentTree │ │ ├── boom@2.10.1
+184 silly currentTree │ │ ├── cryptiles@2.0.5
+184 silly currentTree │ │ ├── hoek@2.16.3
+184 silly currentTree │ │ └── sntp@1.0.9
+184 silly currentTree │ ├─┬ http-signature@1.1.0
+184 silly currentTree │ │ ├── assert-plus@0.1.5
+184 silly currentTree │ │ ├─┬ jsprim@1.2.2
+184 silly currentTree │ │ │ ├── extsprintf@1.0.2
+184 silly currentTree │ │ │ ├── json-schema@0.2.2
+184 silly currentTree │ │ │ └── verror@1.3.6
+184 silly currentTree │ │ └─┬ sshpk@1.7.0
+184 silly currentTree │ │   ├── asn1@0.2.3
+184 silly currentTree │ │   ├── assert-plus@0.2.0
+184 silly currentTree │ │   ├─┬ dashdash@1.10.1
+184 silly currentTree │ │   │ └── assert-plus@0.1.5
+184 silly currentTree │ │   ├─┬ ecc-jsbn@0.0.1
+184 silly currentTree │ │   │ └── jsbn@0.0.0
+184 silly currentTree │ │   ├── jodid25519@1.0.2
+184 silly currentTree │ │   ├── jsbn@0.1.0
+184 silly currentTree │ │   └── tweetnacl@0.13.2
+184 silly currentTree │ ├── is-typedarray@1.0.0
+184 silly currentTree │ ├── isstream@0.1.2
+184 silly currentTree │ ├── json-stringify-safe@5.0.1
+184 silly currentTree │ ├─┬ mime-types@2.1.7
+184 silly currentTree │ │ └── mime-db@1.19.0
+184 silly currentTree │ ├── node-uuid@1.4.7
+184 silly currentTree │ ├── oauth-sign@0.8.0
+184 silly currentTree │ ├── qs@5.2.0
+184 silly currentTree │ ├── stringstream@0.0.5
+184 silly currentTree │ ├── tough-cookie@2.2.1
+184 silly currentTree │ └── tunnel-agent@0.4.1
+184 silly currentTree ├── send@0.2.0
+184 silly currentTree ├── serve-static@1.0.1
+184 silly currentTree ├── type-is@1.0.0
+184 silly currentTree └── utils-merge@1.0.0
+185 silly idealTree Wildhacks-web-app@1.0.0
+185 silly idealTree ├── accepts@1.0.0
+185 silly idealTree ├─┬ body-parser@1.14.1
+185 silly idealTree │ ├── bytes@2.1.0
+185 silly idealTree │ ├── content-type@1.0.1
+185 silly idealTree │ ├─┬ debug@2.2.0
+185 silly idealTree │ │ └── ms@0.7.1
+185 silly idealTree │ ├── depd@1.1.0
+185 silly idealTree │ ├─┬ http-errors@1.3.1
+185 silly idealTree │ │ ├── inherits@2.0.1
+185 silly idealTree │ │ └── statuses@1.2.1
+185 silly idealTree │ ├── iconv-lite@0.4.12
+185 silly idealTree │ ├─┬ on-finished@2.3.0
+185 silly idealTree │ │ └── ee-first@1.1.1
+185 silly idealTree │ ├── qs@5.1.0
+185 silly idealTree │ ├─┬ raw-body@2.1.4
+185 silly idealTree │ │ └── unpipe@1.0.0
+185 silly idealTree │ └─┬ type-is@1.6.9
+185 silly idealTree │   ├── media-typer@0.3.0
+185 silly idealTree │   └─┬ mime-types@2.1.7
+185 silly idealTree │     └── mime-db@1.19.0
+185 silly idealTree ├── buffer-crc32@0.2.1
+185 silly idealTree ├── cookie-signature@1.0.3
+185 silly idealTree ├── cookie@0.1.0
+185 silly idealTree ├── debug@0.8.1
+185 silly idealTree ├── ejs@1.0.0
+185 silly idealTree ├── escape-html@1.0.1
+185 silly idealTree ├── express@4.0.0
+185 silly idealTree ├── fresh@0.2.2
+185 silly idealTree ├── merge-descriptors@0.0.2
+185 silly idealTree ├── methods@0.1.0
+185 silly idealTree ├── mime@1.2.11
+185 silly idealTree ├─┬ mysql@2.9.0
+185 silly idealTree │ ├── bignumber.js@2.0.7
+185 silly idealTree │ └─┬ readable-stream@1.1.13
+185 silly idealTree │   ├── core-util-is@1.0.2
+185 silly idealTree │   ├── inherits@2.0.1
+185 silly idealTree │   ├── isarray@0.0.1
+185 silly idealTree │   └── string_decoder@0.10.31
+185 silly idealTree ├── negotiator@0.3.0
+185 silly idealTree ├── parseurl@1.0.1
+185 silly idealTree ├── path-to-regexp@0.1.2
+185 silly idealTree ├── qs@0.6.6
+185 silly idealTree ├── range-parser@1.0.0
+185 silly idealTree ├─┬ request@2.67.0
+185 silly idealTree │ ├── aws-sign2@0.6.0
+185 silly idealTree │ ├─┬ bl@1.0.0
+185 silly idealTree │ │ └─┬ readable-stream@2.0.4
+185 silly idealTree │ │   ├── core-util-is@1.0.2
+185 silly idealTree │ │   ├── inherits@2.0.1
+185 silly idealTree │ │   ├── isarray@0.0.1
+185 silly idealTree │ │   ├── process-nextick-args@1.0.3
+185 silly idealTree │ │   ├── string_decoder@0.10.31
+185 silly idealTree │ │   └── util-deprecate@1.0.2
+185 silly idealTree │ ├── caseless@0.11.0
+185 silly idealTree │ ├─┬ combined-stream@1.0.5
+185 silly idealTree │ │ └── delayed-stream@1.0.0
+185 silly idealTree │ ├── extend@3.0.0
+185 silly idealTree │ ├── forever-agent@0.6.1
+185 silly idealTree │ ├─┬ form-data@1.0.0-rc3
+185 silly idealTree │ │ └── async@1.5.0
+185 silly idealTree │ ├─┬ har-validator@2.0.2
+185 silly idealTree │ │ ├─┬ chalk@1.1.1
+185 silly idealTree │ │ │ ├── ansi-styles@2.1.0
+185 silly idealTree │ │ │ ├── escape-string-regexp@1.0.3
+185 silly idealTree │ │ │ ├─┬ has-ansi@2.0.0
+185 silly idealTree │ │ │ │ └── ansi-regex@2.0.0
+185 silly idealTree │ │ │ ├─┬ strip-ansi@3.0.0
+185 silly idealTree │ │ │ │ └── ansi-regex@2.0.0
+185 silly idealTree │ │ │ └── supports-color@2.0.0
+185 silly idealTree │ │ ├─┬ commander@2.9.0
+185 silly idealTree │ │ │ └── graceful-readlink@1.0.1
+185 silly idealTree │ │ ├─┬ is-my-json-valid@2.12.3
+185 silly idealTree │ │ │ ├── generate-function@2.0.0
+185 silly idealTree │ │ │ ├─┬ generate-object-property@1.2.0
+185 silly idealTree │ │ │ │ └── is-property@1.0.2
+185 silly idealTree │ │ │ ├── jsonpointer@2.0.0
+185 silly idealTree │ │ │ └── xtend@4.0.1
+185 silly idealTree │ │ └─┬ pinkie-promise@1.0.0
+185 silly idealTree │ │   └── pinkie@1.0.0
+185 silly idealTree │ ├─┬ hawk@3.1.2
+185 silly idealTree │ │ ├── boom@2.10.1
+185 silly idealTree │ │ ├── cryptiles@2.0.5
+185 silly idealTree │ │ ├── hoek@2.16.3
+185 silly idealTree │ │ └── sntp@1.0.9
+185 silly idealTree │ ├─┬ http-signature@1.1.0
+185 silly idealTree │ │ ├── assert-plus@0.1.5
+185 silly idealTree │ │ ├─┬ jsprim@1.2.2
+185 silly idealTree │ │ │ ├── extsprintf@1.0.2
+185 silly idealTree │ │ │ ├── json-schema@0.2.2
+185 silly idealTree │ │ │ └── verror@1.3.6
+185 silly idealTree │ │ └─┬ sshpk@1.7.0
+185 silly idealTree │ │   ├── asn1@0.2.3
+185 silly idealTree │ │   ├── assert-plus@0.2.0
+185 silly idealTree │ │   ├─┬ dashdash@1.10.1
+185 silly idealTree │ │   │ └── assert-plus@0.1.5
+185 silly idealTree │ │   ├─┬ ecc-jsbn@0.0.1
+185 silly idealTree │ │   │ └── jsbn@0.0.0
+185 silly idealTree │ │   ├── jodid25519@1.0.2
+185 silly idealTree │ │   ├── jsbn@0.1.0
+185 silly idealTree │ │   └── tweetnacl@0.13.2
+185 silly idealTree │ ├── is-typedarray@1.0.0
+185 silly idealTree │ ├── isstream@0.1.2
+185 silly idealTree │ ├── json-stringify-safe@5.0.1
+185 silly idealTree │ ├─┬ mime-types@2.1.7
+185 silly idealTree │ │ └── mime-db@1.19.0
+185 silly idealTree │ ├── node-uuid@1.4.7
+185 silly idealTree │ ├── oauth-sign@0.8.0
+185 silly idealTree │ ├── qs@5.2.0
+185 silly idealTree │ ├── stringstream@0.0.5
+185 silly idealTree │ ├── tough-cookie@2.2.1
+185 silly idealTree │ └── tunnel-agent@0.4.1
+185 silly idealTree ├── send@0.2.0
+185 silly idealTree ├─┬ serve-static@1.0.1
+185 silly idealTree │ ├── fresh@0.2.0
+185 silly idealTree │ ├── range-parser@0.0.4
+185 silly idealTree │ └── send@0.1.4
+185 silly idealTree ├── type-is@1.0.0
+185 silly idealTree └── utils-merge@1.0.0
+186 silly generateActionsToTake Starting
+187 silly install generateActionsToTake
+188 silly generateActionsToTake Finishing
+189 silly diffTrees action count 27
+190 silly diffTrees remove mime@1.2.11
+191 silly diffTrees remove negotiator@0.3.0
+192 silly diffTrees remove accepts@1.0.0
+193 silly diffTrees remove buffer-crc32@0.2.1
+194 silly diffTrees remove cookie@0.1.0
+195 silly diffTrees remove cookie-signature@1.0.3
+196 silly diffTrees remove debug@0.8.1
+197 silly diffTrees remove escape-html@1.0.1
+198 silly diffTrees remove fresh@0.2.2
+199 silly diffTrees remove merge-descriptors@0.0.2
+200 silly diffTrees remove methods@0.1.0
+201 silly diffTrees remove parseurl@1.0.1
+202 silly diffTrees remove path-to-regexp@0.1.2
+203 silly diffTrees remove qs@0.6.6
+204 silly diffTrees remove range-parser@1.0.0
+205 silly diffTrees remove mime@1.2.11
+206 silly diffTrees remove send@0.2.0
+207 silly diffTrees remove serve-static@1.0.1
+208 silly diffTrees remove mime@1.2.11
+209 silly diffTrees remove mime@1.2.11
+210 silly diffTrees remove type-is@1.0.0
+211 silly diffTrees remove utils-merge@1.0.0
+212 silly diffTrees update jsbn@0.0.0
+213 silly diffTrees move fresh@0.2.0
+214 silly diffTrees move range-parser@0.0.4
+215 silly diffTrees move send@0.1.4
+216 silly diffTrees update express@4.0.0
+217 silly decomposeActions action count 53
+218 silly decomposeActions remove mime@1.2.11
+219 silly decomposeActions remove negotiator@0.3.0
+220 silly decomposeActions remove accepts@1.0.0
+221 silly decomposeActions remove buffer-crc32@0.2.1
+222 silly decomposeActions remove cookie@0.1.0
+223 silly decomposeActions remove cookie-signature@1.0.3
+224 silly decomposeActions remove debug@0.8.1
+225 silly decomposeActions remove escape-html@1.0.1
+226 silly decomposeActions remove fresh@0.2.2
+227 silly decomposeActions remove merge-descriptors@0.0.2
+228 silly decomposeActions remove methods@0.1.0
+229 silly decomposeActions remove parseurl@1.0.1
+230 silly decomposeActions remove path-to-regexp@0.1.2
+231 silly decomposeActions remove qs@0.6.6
+232 silly decomposeActions remove range-parser@1.0.0
+233 silly decomposeActions remove mime@1.2.11
+234 silly decomposeActions remove send@0.2.0
+235 silly decomposeActions remove serve-static@1.0.1
+236 silly decomposeActions remove mime@1.2.11
+237 silly decomposeActions remove mime@1.2.11
+238 silly decomposeActions remove type-is@1.0.0
+239 silly decomposeActions remove utils-merge@1.0.0
+240 silly decomposeActions fetch jsbn@0.0.0
+241 silly decomposeActions extract jsbn@0.0.0
+242 silly decomposeActions preinstall jsbn@0.0.0
+243 silly decomposeActions build jsbn@0.0.0
+244 silly decomposeActions install jsbn@0.0.0
+245 silly decomposeActions postinstall jsbn@0.0.0
+246 silly decomposeActions test jsbn@0.0.0
+247 silly decomposeActions finalize jsbn@0.0.0
+248 silly decomposeActions move fresh@0.2.0
+249 silly decomposeActions build fresh@0.2.0
+250 silly decomposeActions install fresh@0.2.0
+251 silly decomposeActions postinstall fresh@0.2.0
+252 silly decomposeActions test fresh@0.2.0
+253 silly decomposeActions move range-parser@0.0.4
+254 silly decomposeActions build range-parser@0.0.4
+255 silly decomposeActions install range-parser@0.0.4
+256 silly decomposeActions postinstall range-parser@0.0.4
+257 silly decomposeActions test range-parser@0.0.4
+258 silly decomposeActions move send@0.1.4
+259 silly decomposeActions build send@0.1.4
+260 silly decomposeActions install send@0.1.4
+261 silly decomposeActions postinstall send@0.1.4
+262 silly decomposeActions test send@0.1.4
+263 silly decomposeActions fetch express@4.0.0
+264 silly decomposeActions extract express@4.0.0
+265 silly decomposeActions preinstall express@4.0.0
+266 silly decomposeActions build express@4.0.0
+267 silly decomposeActions install express@4.0.0
+268 silly decomposeActions postinstall express@4.0.0
+269 silly decomposeActions test express@4.0.0
+270 silly decomposeActions finalize express@4.0.0
+271 silly executeActions Starting
+272 silly install executeActions
+273 silly doSerial global-install 0
+274 silly doParallel fetch 2
+275 verbose lock using /home/kjin/.npm/_locks/staging-9e30a82e3548e0b5.lock for /home/kjin/repositories/Wildhacks2015Yelp/node_modules/.staging
+276 silly doParallel extract 2
+277 silly extract jsbn@0.0.0
+278 silly extract express@4.0.0
+279 verbose unbuild node_modules/.staging/jsbn-e5320c8d754075ea6abc6e1f32f301f5
+280 verbose unbuild node_modules/.staging/express-57a3f874e6352e36ef54cd2e9378ec7d
+281 silly gentlyRm /home/kjin/repositories/Wildhacks2015Yelp/node_modules/.staging/jsbn-e5320c8d754075ea6abc6e1f32f301f5 is being purged from base /home/kjin/repositories/Wildhacks2015Yelp
+282 verbose gentlyRm don't care about contents; nuking /home/kjin/repositories/Wildhacks2015Yelp/node_modules/.staging/jsbn-e5320c8d754075ea6abc6e1f32f301f5
+283 verbose tar unpack /home/kjin/.npm/jsbn/0.0.0/package.tgz
+284 verbose tar unpacking to /home/kjin/repositories/Wildhacks2015Yelp/node_modules/.staging/jsbn-e5320c8d754075ea6abc6e1f32f301f5
+285 silly gentlyRm /home/kjin/repositories/Wildhacks2015Yelp/node_modules/.staging/jsbn-e5320c8d754075ea6abc6e1f32f301f5 is being purged
+286 verbose gentlyRm don't care about contents; nuking /home/kjin/repositories/Wildhacks2015Yelp/node_modules/.staging/jsbn-e5320c8d754075ea6abc6e1f32f301f5
+287 silly gentlyRm /home/kjin/repositories/Wildhacks2015Yelp/node_modules/.staging/express-57a3f874e6352e36ef54cd2e9378ec7d is being purged from base /home/kjin/repositories/Wildhacks2015Yelp
+288 verbose gentlyRm don't care about contents; nuking /home/kjin/repositories/Wildhacks2015Yelp/node_modules/.staging/express-57a3f874e6352e36ef54cd2e9378ec7d
+289 silly gunzTarPerm modes [ '755', '644' ]
+290 verbose tar unpack /home/kjin/.npm/express/4.0.0/package.tgz
+291 verbose tar unpacking to /home/kjin/repositories/Wildhacks2015Yelp/node_modules/.staging/express-57a3f874e6352e36ef54cd2e9378ec7d
+292 silly gentlyRm /home/kjin/repositories/Wildhacks2015Yelp/node_modules/.staging/express-57a3f874e6352e36ef54cd2e9378ec7d is being purged
+293 verbose gentlyRm don't care about contents; nuking /home/kjin/repositories/Wildhacks2015Yelp/node_modules/.staging/express-57a3f874e6352e36ef54cd2e9378ec7d
+294 silly gunzTarPerm modes [ '755', '644' ]
+295 silly gunzTarPerm extractEntry package.json
+296 silly gunzTarPerm extractEntry package.json
+297 silly gunzTarPerm extractEntry .npmignore
+298 silly gunzTarPerm extractEntry README.md
+299 silly gunzTarPerm extractEntry .npmignore
+300 silly gunzTarPerm extractEntry LICENSE
+301 silly gunzTarPerm extractEntry example.js
+302 silly gunzTarPerm extractEntry index.js
+303 silly gunzTarPerm extractEntry index.js
+304 silly gunzTarPerm extractEntry Makefile
+305 silly gunzTarPerm extractEntry example.html
+306 silly gunzTarPerm extractEntry Readme.md
+307 silly gunzTarPerm extractEntry .travis.yml
+308 silly gunzTarPerm extractEntry History.md
+309 silly gunzTarPerm extractEntry lib/application.js
+310 silly gunzTarPerm extractEntry lib/express.js
+311 silly gunzTarPerm extractEntry lib/request.js
+312 silly gunzTarPerm extractEntry lib/response.js
+313 silly gunzTarPerm extractEntry lib/utils.js
+314 silly gunzTarPerm extractEntry lib/view.js
+315 silly gunzTarPerm extractEntry lib/middleware/init.js
+316 silly gunzTarPerm extractEntry lib/middleware/query.js
+317 silly gunzTarPerm extractEntry lib/router/index.js
+318 silly gunzTarPerm extractEntry lib/router/layer.js
+319 silly gunzTarPerm extractEntry lib/router/route.js
+320 silly gunzTarPerm extractEntry benchmarks/middleware.js
+321 silly gunzTarPerm extractEntry benchmarks/Makefile
+322 silly gunzTarPerm extractEntry benchmarks/run
+323 silly doParallel preinstall 2
+324 silly preinstall jsbn@0.0.0 /home/kjin/repositories/Wildhacks2015Yelp/node_modules/.staging/jsbn-e5320c8d754075ea6abc6e1f32f301f5
+325 info lifecycle jsbn@0.0.0~preinstall: jsbn@0.0.0
+326 silly preinstall express@4.0.0 /home/kjin/repositories/Wildhacks2015Yelp/node_modules/.staging/express-57a3f874e6352e36ef54cd2e9378ec7d
+327 info lifecycle express@4.0.0~preinstall: express@4.0.0
+328 silly lifecycle jsbn@0.0.0~preinstall: no script for preinstall, continuing
+329 silly lifecycle express@4.0.0~preinstall: no script for preinstall, continuing
+330 silly doReverseSerial remove 22
+331 silly remove /home/kjin/repositories/Wildhacks2015Yelp/node_modules/express/node_modules/utils-merge
+332 verbose unbuild node_modules/express/node_modules/utils-merge
+333 info lifecycle utils-merge@1.0.0~preuninstall: utils-merge@1.0.0
+334 silly lifecycle utils-merge@1.0.0~preuninstall: no script for preuninstall, continuing
+335 info lifecycle utils-merge@1.0.0~uninstall: utils-merge@1.0.0
+336 silly lifecycle utils-merge@1.0.0~uninstall: no script for uninstall, continuing
+337 verbose unbuild rmStuff utils-merge@1.0.0 from /home/kjin/repositories/Wildhacks2015Yelp/node_modules
+338 verbose unbuild rmStuff in /home/kjin/repositories/Wildhacks2015Yelp/node_modules/express/node_modules
+339 info lifecycle utils-merge@1.0.0~postuninstall: utils-merge@1.0.0
+340 silly lifecycle utils-merge@1.0.0~postuninstall: no script for postuninstall, continuing
+341 silly gentlyRm /home/kjin/repositories/Wildhacks2015Yelp/node_modules/express/node_modules/utils-merge is being purged from base /home/kjin/repositories/Wildhacks2015Yelp
+342 verbose gentlyRm don't care about contents; nuking /home/kjin/repositories/Wildhacks2015Yelp/node_modules/express/node_modules/utils-merge
+343 silly vacuum-fs purging /home/kjin/repositories/Wildhacks2015Yelp/node_modules/express/node_modules/utils-merge
+344 silly vacuum-fs quitting because other entries in /home/kjin/repositories/Wildhacks2015Yelp/node_modules/express/node_modules
+345 silly remove /home/kjin/repositories/Wildhacks2015Yelp/node_modules/express/node_modules/type-is
+346 verbose unbuild node_modules/express/node_modules/type-is
+347 info lifecycle type-is@1.0.0~preuninstall: type-is@1.0.0
+348 silly lifecycle type-is@1.0.0~preuninstall: no script for preuninstall, continuing
+349 info lifecycle type-is@1.0.0~uninstall: type-is@1.0.0
+350 silly lifecycle type-is@1.0.0~uninstall: no script for uninstall, continuing
+351 verbose unbuild rmStuff type-is@1.0.0 from /home/kjin/repositories/Wildhacks2015Yelp/node_modules
+352 verbose unbuild rmStuff in /home/kjin/repositories/Wildhacks2015Yelp/node_modules/express/node_modules
+353 info lifecycle type-is@1.0.0~postuninstall: type-is@1.0.0
+354 silly lifecycle type-is@1.0.0~postuninstall: no script for postuninstall, continuing
+355 silly gentlyRm /home/kjin/repositories/Wildhacks2015Yelp/node_modules/express/node_modules/type-is is being purged from base /home/kjin/repositories/Wildhacks2015Yelp
+356 verbose gentlyRm don't care about contents; nuking /home/kjin/repositories/Wildhacks2015Yelp/node_modules/express/node_modules/type-is
+357 silly vacuum-fs purging /home/kjin/repositories/Wildhacks2015Yelp/node_modules/express/node_modules/type-is
+358 silly vacuum-fs quitting because other entries in /home/kjin/repositories/Wildhacks2015Yelp/node_modules/express/node_modules
+359 silly remove /home/kjin/repositories/Wildhacks2015Yelp/node_modules/express/node_modules/type-is/node_modules/mime
+360 verbose unbuild node_modules/express/node_modules/type-is/node_modules/mime
+361 info lifecycle mime@1.2.11~preuninstall: mime@1.2.11
+362 silly lifecycle mime@1.2.11~preuninstall: no script for preuninstall, continuing
+363 info lifecycle mime@1.2.11~uninstall: mime@1.2.11
+364 silly lifecycle mime@1.2.11~uninstall: no script for uninstall, continuing
+365 verbose unbuild rmStuff mime@1.2.11 from /home/kjin/repositories/Wildhacks2015Yelp/node_modules
+366 verbose unbuild rmStuff in /home/kjin/repositories/Wildhacks2015Yelp/node_modules/express/node_modules/type-is/node_modules
+367 info lifecycle mime@1.2.11~postuninstall: mime@1.2.11
+368 silly lifecycle mime@1.2.11~postuninstall: no script for postuninstall, continuing
+369 silly gentlyRm /home/kjin/repositories/Wildhacks2015Yelp/node_modules/express/node_modules/type-is/node_modules/mime is being purged from base /home/kjin/repositories/Wildhacks2015Yelp
+370 verbose gentlyRm don't care about contents; nuking /home/kjin/repositories/Wildhacks2015Yelp/node_modules/express/node_modules/type-is/node_modules/mime
+371 silly vacuum-fs purging /home/kjin/repositories/Wildhacks2015Yelp/node_modules/express/node_modules/type-is/node_modules/mime
+372 silly vacuum-fs removing /home/kjin/repositories/Wildhacks2015Yelp/node_modules/express/node_modules/type-is/node_modules
+373 silly vacuum-fs removing /home/kjin/repositories/Wildhacks2015Yelp/node_modules/express/node_modules/type-is
+374 silly vacuum-fs quitting because other entries in /home/kjin/repositories/Wildhacks2015Yelp/node_modules/express/node_modules
+375 silly remove /home/kjin/repositories/Wildhacks2015Yelp/node_modules/express/node_modules/serve-static/node_modules/send/node_modules/mime
+376 verbose unbuild node_modules/express/node_modules/serve-static/node_modules/send/node_modules/mime
+377 info lifecycle mime@1.2.11~preuninstall: mime@1.2.11
+378 silly lifecycle mime@1.2.11~preuninstall: no script for preuninstall, continuing
+379 info lifecycle mime@1.2.11~uninstall: mime@1.2.11
+380 silly lifecycle mime@1.2.11~uninstall: no script for uninstall, continuing
+381 verbose unbuild rmStuff mime@1.2.11 from /home/kjin/repositories/Wildhacks2015Yelp/node_modules
+382 verbose unbuild rmStuff in /home/kjin/repositories/Wildhacks2015Yelp/node_modules/express/node_modules/serve-static/node_modules/send/node_modules
+383 info lifecycle mime@1.2.11~postuninstall: mime@1.2.11
+384 silly lifecycle mime@1.2.11~postuninstall: no script for postuninstall, continuing
+385 silly gentlyRm /home/kjin/repositories/Wildhacks2015Yelp/node_modules/express/node_modules/serve-static/node_modules/send/node_modules/mime is being purged from base /home/kjin/repositories/Wildhacks2015Yelp
+386 verbose gentlyRm don't care about contents; nuking /home/kjin/repositories/Wildhacks2015Yelp/node_modules/express/node_modules/serve-static/node_modules/send/node_modules/mime
+387 silly vacuum-fs purging /home/kjin/repositories/Wildhacks2015Yelp/node_modules/express/node_modules/serve-static/node_modules/send/node_modules/mime
+388 silly vacuum-fs quitting because other entries in /home/kjin/repositories/Wildhacks2015Yelp/node_modules/express/node_modules/serve-static/node_modules/send/node_modules
+389 silly remove /home/kjin/repositories/Wildhacks2015Yelp/node_modules/express/node_modules/serve-static
+390 verbose unbuild node_modules/express/node_modules/serve-static
+391 info lifecycle serve-static@1.0.1~preuninstall: serve-static@1.0.1
+392 silly lifecycle serve-static@1.0.1~preuninstall: no script for preuninstall, continuing
+393 info lifecycle serve-static@1.0.1~uninstall: serve-static@1.0.1
+394 silly lifecycle serve-static@1.0.1~uninstall: no script for uninstall, continuing
+395 verbose unbuild rmStuff serve-static@1.0.1 from /home/kjin/repositories/Wildhacks2015Yelp/node_modules
+396 verbose unbuild rmStuff in /home/kjin/repositories/Wildhacks2015Yelp/node_modules/express/node_modules
+397 info lifecycle serve-static@1.0.1~postuninstall: serve-static@1.0.1
+398 silly lifecycle serve-static@1.0.1~postuninstall: no script for postuninstall, continuing
+399 silly gentlyRm /home/kjin/repositories/Wildhacks2015Yelp/node_modules/express/node_modules/serve-static is being purged from base /home/kjin/repositories/Wildhacks2015Yelp
+400 verbose gentlyRm don't care about contents; nuking /home/kjin/repositories/Wildhacks2015Yelp/node_modules/express/node_modules/serve-static
+401 silly vacuum-fs purging /home/kjin/repositories/Wildhacks2015Yelp/node_modules/express/node_modules/serve-static
+402 silly vacuum-fs quitting because other entries in /home/kjin/repositories/Wildhacks2015Yelp/node_modules/express/node_modules
+403 silly remove /home/kjin/repositories/Wildhacks2015Yelp/node_modules/express/node_modules/send
+404 verbose unbuild node_modules/express/node_modules/send
+405 info lifecycle send@0.2.0~preuninstall: send@0.2.0
+406 silly lifecycle send@0.2.0~preuninstall: no script for preuninstall, continuing
+407 info lifecycle send@0.2.0~uninstall: send@0.2.0
+408 silly lifecycle send@0.2.0~uninstall: no script for uninstall, continuing
+409 verbose unbuild rmStuff send@0.2.0 from /home/kjin/repositories/Wildhacks2015Yelp/node_modules
+410 verbose unbuild rmStuff in /home/kjin/repositories/Wildhacks2015Yelp/node_modules/express/node_modules
+411 info lifecycle send@0.2.0~postuninstall: send@0.2.0
+412 silly lifecycle send@0.2.0~postuninstall: no script for postuninstall, continuing
+413 silly gentlyRm /home/kjin/repositories/Wildhacks2015Yelp/node_modules/express/node_modules/send is being purged from base /home/kjin/repositories/Wildhacks2015Yelp
+414 verbose gentlyRm don't care about contents; nuking /home/kjin/repositories/Wildhacks2015Yelp/node_modules/express/node_modules/send
+415 silly vacuum-fs purging /home/kjin/repositories/Wildhacks2015Yelp/node_modules/express/node_modules/send
+416 silly vacuum-fs quitting because other entries in /home/kjin/repositories/Wildhacks2015Yelp/node_modules/express/node_modules
+417 silly remove /home/kjin/repositories/Wildhacks2015Yelp/node_modules/express/node_modules/send/node_modules/mime
+418 verbose unbuild node_modules/express/node_modules/send/node_modules/mime
+419 info lifecycle mime@1.2.11~preuninstall: mime@1.2.11
+420 silly lifecycle mime@1.2.11~preuninstall: no script for preuninstall, continuing
+421 info lifecycle mime@1.2.11~uninstall: mime@1.2.11
+422 silly lifecycle mime@1.2.11~uninstall: no script for uninstall, continuing
+423 verbose unbuild rmStuff mime@1.2.11 from /home/kjin/repositories/Wildhacks2015Yelp/node_modules
+424 verbose unbuild rmStuff in /home/kjin/repositories/Wildhacks2015Yelp/node_modules/express/node_modules/send/node_modules
+425 info lifecycle mime@1.2.11~postuninstall: mime@1.2.11
+426 silly lifecycle mime@1.2.11~postuninstall: no script for postuninstall, continuing
+427 silly gentlyRm /home/kjin/repositories/Wildhacks2015Yelp/node_modules/express/node_modules/send/node_modules/mime is being purged from base /home/kjin/repositories/Wildhacks2015Yelp
+428 verbose gentlyRm don't care about contents; nuking /home/kjin/repositories/Wildhacks2015Yelp/node_modules/express/node_modules/send/node_modules/mime
+429 silly vacuum-fs purging /home/kjin/repositories/Wildhacks2015Yelp/node_modules/express/node_modules/send/node_modules/mime
+430 silly vacuum-fs removing /home/kjin/repositories/Wildhacks2015Yelp/node_modules/express/node_modules/send/node_modules
+431 silly vacuum-fs removing /home/kjin/repositories/Wildhacks2015Yelp/node_modules/express/node_modules/send
+432 silly vacuum-fs quitting because other entries in /home/kjin/repositories/Wildhacks2015Yelp/node_modules/express/node_modules
+433 silly remove /home/kjin/repositories/Wildhacks2015Yelp/node_modules/express/node_modules/range-parser
+434 verbose unbuild node_modules/express/node_modules/range-parser
+435 info lifecycle range-parser@1.0.0~preuninstall: range-parser@1.0.0
+436 silly lifecycle range-parser@1.0.0~preuninstall: no script for preuninstall, continuing
+437 info lifecycle range-parser@1.0.0~uninstall: range-parser@1.0.0
+438 silly lifecycle range-parser@1.0.0~uninstall: no script for uninstall, continuing
+439 verbose unbuild rmStuff range-parser@1.0.0 from /home/kjin/repositories/Wildhacks2015Yelp/node_modules
+440 verbose unbuild rmStuff in /home/kjin/repositories/Wildhacks2015Yelp/node_modules/express/node_modules
+441 info lifecycle range-parser@1.0.0~postuninstall: range-parser@1.0.0
+442 silly lifecycle range-parser@1.0.0~postuninstall: no script for postuninstall, continuing
+443 silly gentlyRm /home/kjin/repositories/Wildhacks2015Yelp/node_modules/express/node_modules/range-parser is being purged from base /home/kjin/repositories/Wildhacks2015Yelp
+444 verbose gentlyRm don't care about contents; nuking /home/kjin/repositories/Wildhacks2015Yelp/node_modules/express/node_modules/range-parser
+445 silly vacuum-fs purging /home/kjin/repositories/Wildhacks2015Yelp/node_modules/express/node_modules/range-parser
+446 silly vacuum-fs quitting because other entries in /home/kjin/repositories/Wildhacks2015Yelp/node_modules/express/node_modules
+447 silly remove /home/kjin/repositories/Wildhacks2015Yelp/node_modules/express/node_modules/qs
+448 verbose unbuild node_modules/express/node_modules/qs
+449 info lifecycle qs@0.6.6~preuninstall: qs@0.6.6
+450 silly lifecycle qs@0.6.6~preuninstall: no script for preuninstall, continuing
+451 info lifecycle qs@0.6.6~uninstall: qs@0.6.6
+452 silly lifecycle qs@0.6.6~uninstall: no script for uninstall, continuing
+453 verbose unbuild rmStuff qs@0.6.6 from /home/kjin/repositories/Wildhacks2015Yelp/node_modules
+454 verbose unbuild rmStuff in /home/kjin/repositories/Wildhacks2015Yelp/node_modules/express/node_modules
+455 info lifecycle qs@0.6.6~postuninstall: qs@0.6.6
+456 silly lifecycle qs@0.6.6~postuninstall: no script for postuninstall, continuing
+457 silly gentlyRm /home/kjin/repositories/Wildhacks2015Yelp/node_modules/express/node_modules/qs is being purged from base /home/kjin/repositories/Wildhacks2015Yelp
+458 verbose gentlyRm don't care about contents; nuking /home/kjin/repositories/Wildhacks2015Yelp/node_modules/express/node_modules/qs
+459 silly vacuum-fs purging /home/kjin/repositories/Wildhacks2015Yelp/node_modules/express/node_modules/qs
+460 silly vacuum-fs quitting because other entries in /home/kjin/repositories/Wildhacks2015Yelp/node_modules/express/node_modules
+461 silly remove /home/kjin/repositories/Wildhacks2015Yelp/node_modules/express/node_modules/path-to-regexp
+462 verbose unbuild node_modules/express/node_modules/path-to-regexp
+463 info lifecycle path-to-regexp@0.1.2~preuninstall: path-to-regexp@0.1.2
+464 silly lifecycle path-to-regexp@0.1.2~preuninstall: no script for preuninstall, continuing
+465 info lifecycle path-to-regexp@0.1.2~uninstall: path-to-regexp@0.1.2
+466 silly lifecycle path-to-regexp@0.1.2~uninstall: no script for uninstall, continuing
+467 verbose unbuild rmStuff path-to-regexp@0.1.2 from /home/kjin/repositories/Wildhacks2015Yelp/node_modules
+468 verbose unbuild rmStuff in /home/kjin/repositories/Wildhacks2015Yelp/node_modules/express/node_modules
+469 info lifecycle path-to-regexp@0.1.2~postuninstall: path-to-regexp@0.1.2
+470 silly lifecycle path-to-regexp@0.1.2~postuninstall: no script for postuninstall, continuing
+471 silly gentlyRm /home/kjin/repositories/Wildhacks2015Yelp/node_modules/express/node_modules/path-to-regexp is being purged from base /home/kjin/repositories/Wildhacks2015Yelp
+472 verbose gentlyRm don't care about contents; nuking /home/kjin/repositories/Wildhacks2015Yelp/node_modules/express/node_modules/path-to-regexp
+473 silly vacuum-fs purging /home/kjin/repositories/Wildhacks2015Yelp/node_modules/express/node_modules/path-to-regexp
+474 silly vacuum-fs quitting because other entries in /home/kjin/repositories/Wildhacks2015Yelp/node_modules/express/node_modules
+475 silly remove /home/kjin/repositories/Wildhacks2015Yelp/node_modules/express/node_modules/parseurl
+476 verbose unbuild node_modules/express/node_modules/parseurl
+477 info lifecycle parseurl@1.0.1~preuninstall: parseurl@1.0.1
+478 silly lifecycle parseurl@1.0.1~preuninstall: no script for preuninstall, continuing
+479 info lifecycle parseurl@1.0.1~uninstall: parseurl@1.0.1
+480 silly lifecycle parseurl@1.0.1~uninstall: no script for uninstall, continuing
+481 verbose unbuild rmStuff parseurl@1.0.1 from /home/kjin/repositories/Wildhacks2015Yelp/node_modules
+482 verbose unbuild rmStuff in /home/kjin/repositories/Wildhacks2015Yelp/node_modules/express/node_modules
+483 info lifecycle parseurl@1.0.1~postuninstall: parseurl@1.0.1
+484 silly lifecycle parseurl@1.0.1~postuninstall: no script for postuninstall, continuing
+485 silly gentlyRm /home/kjin/repositories/Wildhacks2015Yelp/node_modules/express/node_modules/parseurl is being purged from base /home/kjin/repositories/Wildhacks2015Yelp
+486 verbose gentlyRm don't care about contents; nuking /home/kjin/repositories/Wildhacks2015Yelp/node_modules/express/node_modules/parseurl
+487 silly vacuum-fs purging /home/kjin/repositories/Wildhacks2015Yelp/node_modules/express/node_modules/parseurl
+488 silly vacuum-fs quitting because other entries in /home/kjin/repositories/Wildhacks2015Yelp/node_modules/express/node_modules
+489 silly remove /home/kjin/repositories/Wildhacks2015Yelp/node_modules/express/node_modules/methods
+490 verbose unbuild node_modules/express/node_modules/methods
+491 info lifecycle methods@0.1.0~preuninstall: methods@0.1.0
+492 silly lifecycle methods@0.1.0~preuninstall: no script for preuninstall, continuing
+493 info lifecycle methods@0.1.0~uninstall: methods@0.1.0
+494 silly lifecycle methods@0.1.0~uninstall: no script for uninstall, continuing
+495 verbose unbuild rmStuff methods@0.1.0 from /home/kjin/repositories/Wildhacks2015Yelp/node_modules
+496 verbose unbuild rmStuff in /home/kjin/repositories/Wildhacks2015Yelp/node_modules/express/node_modules
+497 info lifecycle methods@0.1.0~postuninstall: methods@0.1.0
+498 silly lifecycle methods@0.1.0~postuninstall: no script for postuninstall, continuing
+499 silly gentlyRm /home/kjin/repositories/Wildhacks2015Yelp/node_modules/express/node_modules/methods is being purged from base /home/kjin/repositories/Wildhacks2015Yelp
+500 verbose gentlyRm don't care about contents; nuking /home/kjin/repositories/Wildhacks2015Yelp/node_modules/express/node_modules/methods
+501 silly vacuum-fs purging /home/kjin/repositories/Wildhacks2015Yelp/node_modules/express/node_modules/methods
+502 silly vacuum-fs quitting because other entries in /home/kjin/repositories/Wildhacks2015Yelp/node_modules/express/node_modules
+503 silly remove /home/kjin/repositories/Wildhacks2015Yelp/node_modules/express/node_modules/merge-descriptors
+504 verbose unbuild node_modules/express/node_modules/merge-descriptors
+505 info lifecycle merge-descriptors@0.0.2~preuninstall: merge-descriptors@0.0.2
+506 silly lifecycle merge-descriptors@0.0.2~preuninstall: no script for preuninstall, continuing
+507 info lifecycle merge-descriptors@0.0.2~uninstall: merge-descriptors@0.0.2
+508 silly lifecycle merge-descriptors@0.0.2~uninstall: no script for uninstall, continuing
+509 verbose unbuild rmStuff merge-descriptors@0.0.2 from /home/kjin/repositories/Wildhacks2015Yelp/node_modules
+510 verbose unbuild rmStuff in /home/kjin/repositories/Wildhacks2015Yelp/node_modules/express/node_modules
+511 info lifecycle merge-descriptors@0.0.2~postuninstall: merge-descriptors@0.0.2
+512 silly lifecycle merge-descriptors@0.0.2~postuninstall: no script for postuninstall, continuing
+513 silly gentlyRm /home/kjin/repositories/Wildhacks2015Yelp/node_modules/express/node_modules/merge-descriptors is being purged from base /home/kjin/repositories/Wildhacks2015Yelp
+514 verbose gentlyRm don't care about contents; nuking /home/kjin/repositories/Wildhacks2015Yelp/node_modules/express/node_modules/merge-descriptors
+515 silly vacuum-fs purging /home/kjin/repositories/Wildhacks2015Yelp/node_modules/express/node_modules/merge-descriptors
+516 silly vacuum-fs quitting because other entries in /home/kjin/repositories/Wildhacks2015Yelp/node_modules/express/node_modules
+517 silly remove /home/kjin/repositories/Wildhacks2015Yelp/node_modules/express/node_modules/fresh
+518 verbose unbuild node_modules/express/node_modules/fresh
+519 info lifecycle fresh@0.2.2~preuninstall: fresh@0.2.2
+520 silly lifecycle fresh@0.2.2~preuninstall: no script for preuninstall, continuing
+521 info lifecycle fresh@0.2.2~uninstall: fresh@0.2.2
+522 silly lifecycle fresh@0.2.2~uninstall: no script for uninstall, continuing
+523 verbose unbuild rmStuff fresh@0.2.2 from /home/kjin/repositories/Wildhacks2015Yelp/node_modules
+524 verbose unbuild rmStuff in /home/kjin/repositories/Wildhacks2015Yelp/node_modules/express/node_modules
+525 info lifecycle fresh@0.2.2~postuninstall: fresh@0.2.2
+526 silly lifecycle fresh@0.2.2~postuninstall: no script for postuninstall, continuing
+527 silly gentlyRm /home/kjin/repositories/Wildhacks2015Yelp/node_modules/express/node_modules/fresh is being purged from base /home/kjin/repositories/Wildhacks2015Yelp
+528 verbose gentlyRm don't care about contents; nuking /home/kjin/repositories/Wildhacks2015Yelp/node_modules/express/node_modules/fresh
+529 silly vacuum-fs purging /home/kjin/repositories/Wildhacks2015Yelp/node_modules/express/node_modules/fresh
+530 silly vacuum-fs quitting because other entries in /home/kjin/repositories/Wildhacks2015Yelp/node_modules/express/node_modules
+531 silly remove /home/kjin/repositories/Wildhacks2015Yelp/node_modules/express/node_modules/escape-html
+532 verbose unbuild node_modules/express/node_modules/escape-html
+533 info lifecycle escape-html@1.0.1~preuninstall: escape-html@1.0.1
+534 silly lifecycle escape-html@1.0.1~preuninstall: no script for preuninstall, continuing
+535 info lifecycle escape-html@1.0.1~uninstall: escape-html@1.0.1
+536 silly lifecycle escape-html@1.0.1~uninstall: no script for uninstall, continuing
+537 verbose unbuild rmStuff escape-html@1.0.1 from /home/kjin/repositories/Wildhacks2015Yelp/node_modules
+538 verbose unbuild rmStuff in /home/kjin/repositories/Wildhacks2015Yelp/node_modules/express/node_modules
+539 info lifecycle escape-html@1.0.1~postuninstall: escape-html@1.0.1
+540 silly lifecycle escape-html@1.0.1~postuninstall: no script for postuninstall, continuing
+541 silly gentlyRm /home/kjin/repositories/Wildhacks2015Yelp/node_modules/express/node_modules/escape-html is being purged from base /home/kjin/repositories/Wildhacks2015Yelp
+542 verbose gentlyRm don't care about contents; nuking /home/kjin/repositories/Wildhacks2015Yelp/node_modules/express/node_modules/escape-html
+543 silly vacuum-fs purging /home/kjin/repositories/Wildhacks2015Yelp/node_modules/express/node_modules/escape-html
+544 silly vacuum-fs quitting because other entries in /home/kjin/repositories/Wildhacks2015Yelp/node_modules/express/node_modules
+545 silly remove /home/kjin/repositories/Wildhacks2015Yelp/node_modules/express/node_modules/debug
+546 verbose unbuild node_modules/express/node_modules/debug
+547 info lifecycle debug@0.8.1~preuninstall: debug@0.8.1
+548 silly lifecycle debug@0.8.1~preuninstall: no script for preuninstall, continuing
+549 info lifecycle debug@0.8.1~uninstall: debug@0.8.1
+550 silly lifecycle debug@0.8.1~uninstall: no script for uninstall, continuing
+551 verbose unbuild rmStuff debug@0.8.1 from /home/kjin/repositories/Wildhacks2015Yelp/node_modules
+552 verbose unbuild rmStuff in /home/kjin/repositories/Wildhacks2015Yelp/node_modules/express/node_modules
+553 info lifecycle debug@0.8.1~postuninstall: debug@0.8.1
+554 silly lifecycle debug@0.8.1~postuninstall: no script for postuninstall, continuing
+555 silly gentlyRm /home/kjin/repositories/Wildhacks2015Yelp/node_modules/express/node_modules/debug is being purged from base /home/kjin/repositories/Wildhacks2015Yelp
+556 verbose gentlyRm don't care about contents; nuking /home/kjin/repositories/Wildhacks2015Yelp/node_modules/express/node_modules/debug
+557 silly vacuum-fs purging /home/kjin/repositories/Wildhacks2015Yelp/node_modules/express/node_modules/debug
+558 silly vacuum-fs quitting because other entries in /home/kjin/repositories/Wildhacks2015Yelp/node_modules/express/node_modules
+559 silly remove /home/kjin/repositories/Wildhacks2015Yelp/node_modules/express/node_modules/cookie-signature
+560 verbose unbuild node_modules/express/node_modules/cookie-signature
+561 info lifecycle cookie-signature@1.0.3~preuninstall: cookie-signature@1.0.3
+562 silly lifecycle cookie-signature@1.0.3~preuninstall: no script for preuninstall, continuing
+563 info lifecycle cookie-signature@1.0.3~uninstall: cookie-signature@1.0.3
+564 silly lifecycle cookie-signature@1.0.3~uninstall: no script for uninstall, continuing
+565 verbose unbuild rmStuff cookie-signature@1.0.3 from /home/kjin/repositories/Wildhacks2015Yelp/node_modules
+566 verbose unbuild rmStuff in /home/kjin/repositories/Wildhacks2015Yelp/node_modules/express/node_modules
+567 info lifecycle cookie-signature@1.0.3~postuninstall: cookie-signature@1.0.3
+568 silly lifecycle cookie-signature@1.0.3~postuninstall: no script for postuninstall, continuing
+569 silly gentlyRm /home/kjin/repositories/Wildhacks2015Yelp/node_modules/express/node_modules/cookie-signature is being purged from base /home/kjin/repositories/Wildhacks2015Yelp
+570 verbose gentlyRm don't care about contents; nuking /home/kjin/repositories/Wildhacks2015Yelp/node_modules/express/node_modules/cookie-signature
+571 silly vacuum-fs purging /home/kjin/repositories/Wildhacks2015Yelp/node_modules/express/node_modules/cookie-signature
+572 silly vacuum-fs quitting because other entries in /home/kjin/repositories/Wildhacks2015Yelp/node_modules/express/node_modules
+573 silly remove /home/kjin/repositories/Wildhacks2015Yelp/node_modules/express/node_modules/cookie
+574 verbose unbuild node_modules/express/node_modules/cookie
+575 info lifecycle cookie@0.1.0~preuninstall: cookie@0.1.0
+576 silly lifecycle cookie@0.1.0~preuninstall: no script for preuninstall, continuing
+577 info lifecycle cookie@0.1.0~uninstall: cookie@0.1.0
+578 silly lifecycle cookie@0.1.0~uninstall: no script for uninstall, continuing
+579 verbose unbuild rmStuff cookie@0.1.0 from /home/kjin/repositories/Wildhacks2015Yelp/node_modules
+580 verbose unbuild rmStuff in /home/kjin/repositories/Wildhacks2015Yelp/node_modules/express/node_modules
+581 info lifecycle cookie@0.1.0~postuninstall: cookie@0.1.0
+582 silly lifecycle cookie@0.1.0~postuninstall: no script for postuninstall, continuing
+583 silly gentlyRm /home/kjin/repositories/Wildhacks2015Yelp/node_modules/express/node_modules/cookie is being purged from base /home/kjin/repositories/Wildhacks2015Yelp
+584 verbose gentlyRm don't care about contents; nuking /home/kjin/repositories/Wildhacks2015Yelp/node_modules/express/node_modules/cookie
+585 silly vacuum-fs purging /home/kjin/repositories/Wildhacks2015Yelp/node_modules/express/node_modules/cookie
+586 silly vacuum-fs quitting because other entries in /home/kjin/repositories/Wildhacks2015Yelp/node_modules/express/node_modules
+587 silly remove /home/kjin/repositories/Wildhacks2015Yelp/node_modules/express/node_modules/buffer-crc32
+588 verbose unbuild node_modules/express/node_modules/buffer-crc32
+589 info lifecycle buffer-crc32@0.2.1~preuninstall: buffer-crc32@0.2.1
+590 silly lifecycle buffer-crc32@0.2.1~preuninstall: no script for preuninstall, continuing
+591 info lifecycle buffer-crc32@0.2.1~uninstall: buffer-crc32@0.2.1
+592 silly lifecycle buffer-crc32@0.2.1~uninstall: no script for uninstall, continuing
+593 verbose unbuild rmStuff buffer-crc32@0.2.1 from /home/kjin/repositories/Wildhacks2015Yelp/node_modules
+594 verbose unbuild rmStuff in /home/kjin/repositories/Wildhacks2015Yelp/node_modules/express/node_modules
+595 info lifecycle buffer-crc32@0.2.1~postuninstall: buffer-crc32@0.2.1
+596 silly lifecycle buffer-crc32@0.2.1~postuninstall: no script for postuninstall, continuing
+597 silly gentlyRm /home/kjin/repositories/Wildhacks2015Yelp/node_modules/express/node_modules/buffer-crc32 is being purged from base /home/kjin/repositories/Wildhacks2015Yelp
+598 verbose gentlyRm don't care about contents; nuking /home/kjin/repositories/Wildhacks2015Yelp/node_modules/express/node_modules/buffer-crc32
+599 silly vacuum-fs purging /home/kjin/repositories/Wildhacks2015Yelp/node_modules/express/node_modules/buffer-crc32
+600 silly vacuum-fs quitting because other entries in /home/kjin/repositories/Wildhacks2015Yelp/node_modules/express/node_modules
+601 silly remove /home/kjin/repositories/Wildhacks2015Yelp/node_modules/express/node_modules/accepts
+602 verbose unbuild node_modules/express/node_modules/accepts
+603 info lifecycle accepts@1.0.0~preuninstall: accepts@1.0.0
+604 silly lifecycle accepts@1.0.0~preuninstall: no script for preuninstall, continuing
+605 info lifecycle accepts@1.0.0~uninstall: accepts@1.0.0
+606 silly lifecycle accepts@1.0.0~uninstall: no script for uninstall, continuing
+607 verbose unbuild rmStuff accepts@1.0.0 from /home/kjin/repositories/Wildhacks2015Yelp/node_modules
+608 verbose unbuild rmStuff in /home/kjin/repositories/Wildhacks2015Yelp/node_modules/express/node_modules
+609 info lifecycle accepts@1.0.0~postuninstall: accepts@1.0.0
+610 silly lifecycle accepts@1.0.0~postuninstall: no script for postuninstall, continuing
+611 silly gentlyRm /home/kjin/repositories/Wildhacks2015Yelp/node_modules/express/node_modules/accepts is being purged from base /home/kjin/repositories/Wildhacks2015Yelp
+612 verbose gentlyRm don't care about contents; nuking /home/kjin/repositories/Wildhacks2015Yelp/node_modules/express/node_modules/accepts
+613 silly vacuum-fs purging /home/kjin/repositories/Wildhacks2015Yelp/node_modules/express/node_modules/accepts
+614 silly vacuum-fs quitting because other entries in /home/kjin/repositories/Wildhacks2015Yelp/node_modules/express/node_modules
+615 silly remove /home/kjin/repositories/Wildhacks2015Yelp/node_modules/express/node_modules/accepts/node_modules/negotiator
+616 verbose unbuild node_modules/express/node_modules/accepts/node_modules/negotiator
+617 info lifecycle negotiator@0.3.0~preuninstall: negotiator@0.3.0
+618 silly lifecycle negotiator@0.3.0~preuninstall: no script for preuninstall, continuing
+619 info lifecycle negotiator@0.3.0~uninstall: negotiator@0.3.0
+620 silly lifecycle negotiator@0.3.0~uninstall: no script for uninstall, continuing
+621 verbose unbuild rmStuff negotiator@0.3.0 from /home/kjin/repositories/Wildhacks2015Yelp/node_modules
+622 verbose unbuild rmStuff in /home/kjin/repositories/Wildhacks2015Yelp/node_modules/express/node_modules/accepts/node_modules
+623 info lifecycle negotiator@0.3.0~postuninstall: negotiator@0.3.0
+624 silly lifecycle negotiator@0.3.0~postuninstall: no script for postuninstall, continuing
+625 silly gentlyRm /home/kjin/repositories/Wildhacks2015Yelp/node_modules/express/node_modules/accepts/node_modules/negotiator is being purged from base /home/kjin/repositories/Wildhacks2015Yelp
+626 verbose gentlyRm don't care about contents; nuking /home/kjin/repositories/Wildhacks2015Yelp/node_modules/express/node_modules/accepts/node_modules/negotiator
+627 silly vacuum-fs purging /home/kjin/repositories/Wildhacks2015Yelp/node_modules/express/node_modules/accepts/node_modules/negotiator
+628 silly vacuum-fs quitting because other entries in /home/kjin/repositories/Wildhacks2015Yelp/node_modules/express/node_modules/accepts/node_modules
+629 silly remove /home/kjin/repositories/Wildhacks2015Yelp/node_modules/express/node_modules/accepts/node_modules/mime
+630 verbose unbuild node_modules/express/node_modules/accepts/node_modules/mime
+631 info lifecycle mime@1.2.11~preuninstall: mime@1.2.11
+632 silly lifecycle mime@1.2.11~preuninstall: no script for preuninstall, continuing
+633 info lifecycle mime@1.2.11~uninstall: mime@1.2.11
+634 silly lifecycle mime@1.2.11~uninstall: no script for uninstall, continuing
+635 verbose unbuild rmStuff mime@1.2.11 from /home/kjin/repositories/Wildhacks2015Yelp/node_modules
+636 verbose unbuild rmStuff in /home/kjin/repositories/Wildhacks2015Yelp/node_modules/express/node_modules/accepts/node_modules
+637 info lifecycle mime@1.2.11~postuninstall: mime@1.2.11
+638 silly lifecycle mime@1.2.11~postuninstall: no script for postuninstall, continuing
+639 silly gentlyRm /home/kjin/repositories/Wildhacks2015Yelp/node_modules/express/node_modules/accepts/node_modules/mime is being purged from base /home/kjin/repositories/Wildhacks2015Yelp
+640 verbose gentlyRm don't care about contents; nuking /home/kjin/repositories/Wildhacks2015Yelp/node_modules/express/node_modules/accepts/node_modules/mime
+641 silly vacuum-fs purging /home/kjin/repositories/Wildhacks2015Yelp/node_modules/express/node_modules/accepts/node_modules/mime
+642 silly vacuum-fs removing /home/kjin/repositories/Wildhacks2015Yelp/node_modules/express/node_modules/accepts/node_modules
+643 silly vacuum-fs removing /home/kjin/repositories/Wildhacks2015Yelp/node_modules/express/node_modules/accepts
+644 silly vacuum-fs quitting because other entries in /home/kjin/repositories/Wildhacks2015Yelp/node_modules/express/node_modules
+645 silly doSerial move 3
+646 silly move /home/kjin/repositories/Wildhacks2015Yelp/node_modules/express/node_modules/serve-static/node_modules/send/node_modules/fresh /home/kjin/repositories/Wildhacks2015Yelp/node_modules/serve-static/node_modules/fresh
+647 info lifecycle fresh@0.2.0~preuninstall: fresh@0.2.0
+648 silly lifecycle fresh@0.2.0~preuninstall: no script for preuninstall, continuing
+649 info lifecycle fresh@0.2.0~uninstall: fresh@0.2.0
+650 silly lifecycle fresh@0.2.0~uninstall: no script for uninstall, continuing
+651 verbose unbuild rmStuff fresh@0.2.0 from /home/kjin/repositories/Wildhacks2015Yelp/node_modules
+652 verbose unbuild rmStuff in /home/kjin/repositories/Wildhacks2015Yelp/node_modules/express/node_modules/serve-static/node_modules/send/node_modules
+653 info lifecycle fresh@0.2.0~postuninstall: fresh@0.2.0
+654 silly lifecycle fresh@0.2.0~postuninstall: no script for postuninstall, continuing
+655 verbose unlock done using /home/kjin/.npm/_locks/staging-9e30a82e3548e0b5.lock for /home/kjin/repositories/Wildhacks2015Yelp/node_modules/.staging
+656 silly rollbackFailedOptional Starting
+657 silly rollbackFailedOptional Finishing
+658 silly runTopLevelLifecycles Starting
+659 silly runTopLevelLifecycles Finishing
+660 silly install printInstalled
+661 warn EPACKAGEJSON Wildhacks-web-app@1.0.0 No description
+662 warn EPACKAGEJSON Wildhacks-web-app@1.0.0 No repository field.
+663 warn EPACKAGEJSON Wildhacks-web-app@1.0.0 No license field.
+664 verbose stack Error: ENOENT, rename '/home/kjin/repositories/Wildhacks2015Yelp/node_modules/express/node_modules/serve-static/node_modules/send/node_modules/fresh'
+665 verbose cwd /home/kjin/repositories/Wildhacks2015Yelp
+666 error Linux 3.13.0-68-generic
+667 error argv "node" "/usr/local/bin/npm" "install" "express"
+668 error node v0.10.25
+669 error npm  v3.4.1
+670 error path /home/kjin/repositories/Wildhacks2015Yelp/node_modules/express/node_modules/serve-static/node_modules/send/node_modules/fresh
+671 error code ENOENT
+672 error errno 34
+673 error enoent ENOENT, rename '/home/kjin/repositories/Wildhacks2015Yelp/node_modules/express/node_modules/serve-static/node_modules/send/node_modules/fresh'
+673 error enoent This is most likely not a problem with npm itself
+673 error enoent and is related to npm not being able to find a file.
+674 verbose exit [ 34, true ]

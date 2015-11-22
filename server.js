@@ -65,11 +65,17 @@ app.post('/testpage', function(appreq, appres) {
 
 	  /* Add the query string to the url */
 	  var apiURL = url+'?'+paramURL;
-
+	//console.log(apiURL);
+	//apiURL = 'https://api.yelp.com/v2/business/yelp-san-francisco';
 	  /* Then we use request to send make the API Request */
 	  request(apiURL, function(error, response, body){
 	  	var resultsObj = JSON.parse(body);
-	  	plotting(businesses);
+		var businessResults = [];
+		for(i=0; i < resultsObj.businesses.length; i++) {
+			businessResults.push([resultsObj.businesses[i].name, resultsObj.businesses[i].rating, resultsObj.businesses[i].review_count]);
+			
+		}
+	  	plotting(businessResults);
 	  	appres.send(resultsObj.businesses);
 
 	    //return callback(error, response, body);

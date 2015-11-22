@@ -7,9 +7,65 @@ var bodyParser = require('body-parser');
 var qs = require('querystring');  
 var _ = require('lodash');
 //var CanvasJS = require('./canvasjs-1.7.0/canvasjs.min.js');
-var testhtml ='<html><body><h1> FUN</h1></body></html>';
 
-var html = '<!DOCTYPE HTML><html><head><script type="text/javascript" window.onload = function () {var chart = new CanvasJS.Chart("chartContainer",{title:{text: "Yelp Stuff", fontFamily: "arial black",fontColor: "DarkSlateGrey"}, animationEnabled: true,axisX: {title:"Number of Ratings",	titleFontFamily: "arial"},axisY:{title: "Stars",titleFontFamily: "arial",valueFormatString:"0 USD",titleFontSize: 12},data: [{type: "scatter",toolTipContent: "<span style=&quot;\\"&quot;color: {color};&quot;\\"&quot;><strong>{name}</strong></span> <br/> <strong>Cost/ container</strong> {y} $<br/> <strong>Ease of Business</strong> {x} ",dataPoints: [{ x: 132, y: 1070,name:"India" },{ x: 126, y: 2275,name:"Brazil" },{ x: 100, y: 1265,name:"Greece" },{ x: 110, y: 755,name:"Egypt" },{ x: 120, y: 1800,name:"Russia" },{ x: 91, y: 545,name:"China" },{ x: 87, y: 1245,name:"Italy" },{ x: 44, y: 1221,name:"Spain" },{ x: 21, y: 801,name:"Latvia" },{ x: 18, y: 435,name:"Malaysia" },{ x: 53, y: 1780,name:"Mexico" },{ x: 20, y: 970,name:"Japan" },{ x: 35, y: 1795,name:"South Africa" },{ x: 19, y: 937,name:"Germany" },{ x: 6, y: 729,name:"Norway" },{ x: 4, y: 1315,name:"USA" },{ x: 13, y: 1660,name:"Canada" },{ x: 26, y: 1540,name:"Switzerland" },{ x: 1, y: 439,name:"Singapore" },{ x: 164, y: 3650,name:"Iraq" },{ x: 148, y: 1318,name:"Algeria" },{ x: 142, y: 2805,name:"Bhutan" },{ x: 135, y: 2900,name:"Sudan" },{ x: 123, y: 3015,name:"Uganda" },{ x: 105, y: 705,name:"Pakistan" },{ x: 113, y: 180,name:"Argentina" },{ x: 102, y: 1750,name:"Paraguay"},{ x: 80, y: 1180,name:"Croatia" },{ x: 71, y: 1063,name:"Turkey" },{ x: 51, y: 1085,name:"Hungary" },{ x: 42, y: 2830,name:"Columbia" },{ x: 30, y: 899,name:"Portugal" },{ x: 12, y: 686,name:"Saudi Arabia" },{ x: 29, y: 1248,name:"France" },{ x: 7, y: 1045,name:"UK" },{ x: 16, y: 1715,name:"Georgia" },{ x: 9, y: 1674,name:"Iceland" }]}]});chart.render();}</script><script type="text/javascript" src="/assets/script/canvasjs.min.js"></script></head><body>	<div id="chartContainer" style="height: 300px; width: 100%;">	</div></body></html>';
+var html2 = '<!DOCTYPE html>\n' +
+'<html> \n' +
+'<head>\n' +
+'<script type="text/javascript">\n' + 
+'window.onload = function () {\n' +
+'	var chart = new CanvasJS.Chart("chartContainer");\n'+
+'	var restName = "RestaurantNameGoesHere";\n'+
+'	chart.options.title = { text: \'Reviews for \' + restName };\n'+
+'	chart.options.axisX = { title: \'Stars\'};\n'+
+'	chart.options.axisY = { title: \'Ratings\'};\n'+
+'	chart.options.legend = { text: \'Bubble size is coolness of review\'};\n'+
+'	var series1 = { type: \'scatter\'};\n' +
+'	chart.options.data = [];\n'+
+'	chart.options.data.push(series1);\n'+
+'	var stars = [3,4,2,3,4];\n'+
+'	var ratings = [2,4,3,3,2];\n'+
+'	var names = [\'tim\',\'jon\',\'will\',\'kevin\',\'jai\'];\n'+
+'	var tmparray = [];\n'+
+'	for (var i=0; i < stars.length; i++) {\n'+
+'		tmparray.push({ x: stars[i], y: ratings[i], name: names[i]});}series1.dataPoints = tmparray; chart.render();}\n'+
+'</script>\n'+
+'<script type="text/javascript" src="./canvasjs-1.7.0/canvasjs.min.js"></script>\n'+
+'</head>\n'+
+'<body> \n' +
+'	<div id="chartContainer" style="height: 300px; width: 100%;">Hello </div>\n'+
+'</body> \n' +
+'</html>';
+
+var html = '<!DOCTYPE html>\n' + 
+'<html>\n' + 
+'<head>\n' +
+'<script type="text/javascript">\n' + 
+'window.onload = function () {\n' +
+'	var chart = new CanvasJS.Chart("chartContainer");\n'+
+'	var restName = "RestaurantNameGoesHere";\n'+
+'	chart.options.title = { text: \'Reviews for \' + restName };\n'+
+'	chart.options.axisX = { title: \'Stars\'};\n'+
+'	chart.options.axisY = { title: \'Ratings\'};\n'+
+'	chart.options.legend = { text: \'Bubble size is coolness of review\'};\n'+
+'	var series1 = { type: \'scatter\'};\n' +
+'	chart.options.data = [];\n'+
+'	chart.options.data.push(series1);\n'+
+'	var stars = [3,4,2,3,4];\n'+
+'	var ratings = [2,4,3,3,2];\n'+
+'	var names = [\'tim\',\'jon\',\'will\',\'kevin\',\'jai\'];\n'+
+'	var tmparray = [];\n'+
+'	for (var i=0; i < stars.length; i++) {\n'+
+'		tmparray.push({ x: stars[i], y: ratings[i], name: names[i]});}series1.dataPoints = tmparray; chart.render();}\n'+
+'</script>\n'+
+'<script type="text/javascript" src="./canvasjs-1.7.0/canvasjs.min.js"></script>\n'+
+'</head>\n'+
+'<body>\n'+
+'	<div id="chartContainer" style="height: 300px; width: 100%;"> </div>\n'+
+'</body>\n' +
+'</html>\n';
+
+console.log(html);
+
 app.use(bodyParser.json()); // support json encoded bodies
 app.use(bodyParser.urlencoded({ extended: true })); // support encoded bodies
 
@@ -78,9 +134,10 @@ app.post('/testpage', function(appreq, appres) {
 			businessResults.push([resultsObj.businesses[i].name, resultsObj.businesses[i].rating, resultsObj.businesses[i].review_count]);
 		
 		}
+		console.log(html);
 	  	//plotting(businessResults);
 //	  	appres.send(resultsObj.businesses);
-		appres.send(html);
+		appres.send(html2);
 	    //return callback(error, response, body);
 	  });
 

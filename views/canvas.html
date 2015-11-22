@@ -2,8 +2,25 @@
 <html>
 
 <head>  
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script type="text/javascript">
-	window.onload = function () {
+	$(document).ready(function () {
+
+
+		$.post("/test2", 
+			{
+				handle: $('input[name="location"]').val(),
+				location: 'Chicago'
+			},
+            function(res){
+
+            	console.log(res);
+
+            }
+		);
+
+
+
 		var chart = new CanvasJS.Chart("chartContainer",
 		{
 			title:{
@@ -74,11 +91,14 @@
 		});
 
 chart.render();
-}
+})
 </script>
-<script type="text/javascript" src="/assets/script/canvasjs.min.js"></script>
+<script type="text/javascript" src="/canvasjs-1.7.0/canvasjs.min.js"></script>
 </head>
 <body>
+
+
+	
 	<div id="chartContainer" style="height: 300px; width: 100%;">
 	</div>
 </body>

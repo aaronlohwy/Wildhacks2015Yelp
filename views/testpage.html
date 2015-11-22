@@ -1,6 +1,14 @@
 <html>
   <head>
-    
+  	<script>
+  	window.onload() = function() {
+  			$('.my_selector').click(function(){
+   			$.get('http://localhost:3000/testpage', {}, function(data){
+        console.log(data)
+           });
+		});
+  	}
+  	</script>
   </head>
   <body>
     <form method="post" action="/test2" target="_blank">

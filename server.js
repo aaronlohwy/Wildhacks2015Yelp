@@ -68,7 +68,8 @@ app.post('/test2', function(appreq, appres) {
 
 	  /* Add the query string to the url */
 	  var apiURL = url+'?'+paramURL;
-
+	//console.log(apiURL);
+	//apiURL = 'https://api.yelp.com/v2/business/yelp-san-francisco';
 	  /* Then we use request to send make the API Request */
 	  request(apiURL, function(error, response, body){
 	  	var resultsObj = JSON.parse(body);
@@ -81,7 +82,7 @@ app.post('/test2', function(appreq, appres) {
 
 });
 
-var axes=function(businesses){
+/*var axes=function(businesses){
 	var xaxis=[];
 	var yaxis=[];
 
@@ -102,9 +103,9 @@ var plotting = function (businesses) {
 		for(var i =0;i<businesses.length; i++){
 
 			var current = businesses[i];
-			var cx=current.review_count;
-			var cy=current.rating;
-			var cname=current.name;
+			var cx = current[2];
+			var cy = current[1];
+			var cname = current[0];
 
 			myDataPoints.push({x:cx, y:cy,name:cname});
 
@@ -144,4 +145,4 @@ var plotting = function (businesses) {
 		});
 
 chart.render();
-};
+};*/

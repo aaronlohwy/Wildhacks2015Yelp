@@ -75,7 +75,7 @@ app.post('/testpage', function(appreq, appres) {
 			businessResults.push([resultsObj.businesses[i].name, resultsObj.businesses[i].rating, resultsObj.businesses[i].review_count]);
 			
 		}
-	  	plotting(businessResults);
+	  	//plotting(businessResults);
 	  	appres.send(resultsObj.businesses);
 
 	    //return callback(error, response, body);
@@ -83,7 +83,7 @@ app.post('/testpage', function(appreq, appres) {
 
 });
 
-var axes=function(businesses){
+/*var axes=function(businesses){
 	var xaxis=[];
 	var yaxis=[];
 
@@ -186,4 +186,4 @@ var plotting = function (businesses) {
 		});
 
 chart.render();
-};
+};*/

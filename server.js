@@ -23,7 +23,7 @@ console.log("Express is running on port 3000");
 
 
 app.post('/testpage', function(appreq, appres) {
-
+	var location_input = appreq.body.location;
 	var httpMethod = 'GET';
 
 	  /* The url we are using for the request */
@@ -34,7 +34,8 @@ app.post('/testpage', function(appreq, appres) {
 	    location: 'San+Francisco',
 	    sort: '2'
 	  };
-
+	  default_parameters.location = location_input;	  
+	  console.log(default_parameters.location);
 	  /* We set the require parameters here */
 	  var required_parameters = {
 	    oauth_consumer_key : "l_gIZ-IhV-OG5aMdl_zDjw",
@@ -68,7 +69,7 @@ app.post('/testpage', function(appreq, appres) {
 	  /* Then we use request to send make the API Request */
 	  request(apiURL, function(error, response, body){
 	  	var resultsObj = JSON.parse(body);
-	  	appres.send(resultsObj);
+	  	appres.send(resultsObj.businesses);
 	    //return callback(error, response, body);
 	  });
 

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript">
+window.onload = function () {
+    var chart = new CanvasJS.Chart("chartContainer");
+
+    var restName = "RestaurantNameGoesHere";
+    chart.options.title = { text: 'Reviews for ' + restName };
+
+    var series1 = { //dataSeries - first quarter
+        type: "bubble",
+        name: "First Quarter",
+        showInLegend: true,
+      toolTipContent: "<span style='\"'color: {color};'\"'><strong>{name}</strong></span><br/><strong>Useful</strong> {x}<br/> <strong>Funny</strong> {y}<br/> <strong>Cool</strong> {z}",
+    };
+
+  
+  chart.options.data = [];
+    chart.options.data.push(series1);
+
+	var useful = [3,4,2,3,4];
+	var funny = [2,4,3,3,2];
+	var cool = [4,3,2,3,3];
+	var names = ['tim','jon','will','kevin','jai'];
+
+	var tmparray = [];
+	for (var i=0; i < useful.length; i++) {
+		tmparray.push({ x: useful[i], y: funny[i], z: cool[i], name: names[i]});
+	}
+	series1.dataPoints = tmparray;
+
+    chart.render();
+}
+</script>
+<script type="text/javascript" src="./canvasjs-1.7.0/canvasjs.min.js"></script>
+</head>
+
+<body>
+    <div id="chartContainer" style="height: 300px; width: 100%;">
+    </div>
+</body>
+</html>

@@ -31,8 +31,8 @@ app.post('/testpage', function(appreq, appres) {
 
 	  /* We can setup default parameters here */
 	  var default_parameters = {
-	    location: 'San+Francisco',
-	    sort: '2'
+	    location: 'San+Francisco'//,
+	    //sort: '2'
 	  };
 	  default_parameters.location = location_input;	  
 	  console.log(default_parameters.location);
@@ -65,11 +65,17 @@ app.post('/testpage', function(appreq, appres) {
 
 	  /* Add the query string to the url */
 	  var apiURL = url+'?'+paramURL;
-
+	//console.log(apiURL);
+	//apiURL = 'https://api.yelp.com/v2/business/yelp-san-francisco';
 	  /* Then we use request to send make the API Request */
 	  request(apiURL, function(error, response, body){
 	  	var resultsObj = JSON.parse(body);
-	  	appres.send(resultsObj.businesses);
+		var businessResults = [];
+		for(i=0; i < resultsObj.businesses.length; i++) {
+			businessResults.push([resultsObj.businesses[i].name, resultsObj.businesses[i].rating, resultsObj.businesses[i].review_count]);
+			
+		}
+	  	appres.send(businessResults);
 	    //return callback(error, response, body);
 	  });
 
